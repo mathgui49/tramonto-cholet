@@ -5,6 +5,27 @@
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // Theme toggle (persisted in localStorage)
+  const themeToggle = document.getElementById("themeToggle");
+  const themeMeta = document.querySelector('meta[name="theme-color"]');
+  const applyTheme = (theme) => {
+    if (theme === "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+      if (themeMeta) themeMeta.setAttribute("content", "#0e0805");
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+      if (themeMeta) themeMeta.setAttribute("content", "#f6ecd9");
+    }
+  };
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      const next = isDark ? "light" : "dark";
+      applyTheme(next);
+      try { localStorage.setItem("tramonto-theme", next); } catch (e) {}
+    });
+  }
+
   // Mobile nav
   const nav = document.querySelector(".nav");
   const toggle = document.getElementById("navToggle");
