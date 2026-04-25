@@ -1,23 +1,65 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr-FR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#0a0a0a" />
-    <title>Tramonto · La Napolitaine de Cholet</title>
+    <meta name="theme-color" content="#0a0604" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f6ecd9" media="(prefers-color-scheme: light)" />
+    <meta name="color-scheme" content="light dark" />
+
+    <title>Tramonto · Pizzeria napolitaine à Cholet · Halal · Livraison gratuite</title>
     <meta
       name="description"
-      content="Tramonto, la pizzeria napolitaine de Cholet. Pizzas au feu, pâtes fraîches, gratins maison. Livraison gratuite dès 25 €. 172 rue Nationale, Cholet."
+      content="Pizzeria napolitaine à Cholet : pizzas au feu de bois, pâtes fraîches, gratins maison. 100 % halal. Livraison gratuite 19h–23h dans un rayon de 5 km. 172 rue Nationale."
     />
+    <meta name="keywords" content="pizzeria Cholet, pizza napolitaine Cholet, livraison pizza Cholet, halal Cholet, restaurant italien Cholet, Tramonto" />
     <meta name="author" content="Tramonto" />
-    <meta property="og:title" content="Tramonto · La Napolitaine de Cholet" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="geo.region" content="FR-PDL" />
+    <meta name="geo.placename" content="Cholet" />
+    <meta name="geo.position" content="47.0608;-0.8788" />
+    <meta name="ICBM" content="47.0608, -0.8788" />
+
+    <link rel="canonical" href="https://tramonto-cholet.vercel.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tramonto · Pizzeria napolitaine à Cholet" />
     <meta
       property="og:description"
-      content="Pizzas napolitaines, pâtes, gratins. Livraison gratuite dès 25 €. 172 rue Nationale, Cholet."
+      content="Pizzas napolitaines, pâtes, gratins · 100 % halal. Livraison gratuite 19h–23h dans un rayon de 5 km. 172 rue Nationale, Cholet."
     />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="restaurant.restaurant" />
     <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Tramonto · La Napolitaine de Cholet" />
+    <meta property="og:url" content="https://tramonto-cholet.vercel.app/" />
+    <meta property="og:image" content="https://tramonto-cholet.vercel.app/og.jpg" />
+    <meta property="og:image:secure_url" content="https://tramonto-cholet.vercel.app/og.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Pizza burratissima de Tramonto, la pizzeria napolitaine de Cholet" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tramonto · Pizzeria napolitaine à Cholet" />
+    <meta
+      name="twitter:description"
+      content="Pizzas napolitaines, pâtes, gratins · 100 % halal. Livraison gratuite 19h–23h. 172 rue Nationale, Cholet."
+    />
+    <meta name="twitter:image" content="https://tramonto-cholet.vercel.app/og.jpg" />
+    <meta name="twitter:image:alt" content="Pizza burratissima de Tramonto, Cholet" />
+
+    <!-- Icons & PWA -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- LCP preload -->
+    <link rel="preload" as="image" href="photos/hero-pizza.jpg" fetchpriority="high" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,6 +67,92 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Structured data: Restaurant -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "@id": "https://tramonto-cholet.vercel.app/#restaurant",
+      "name": "Tramonto · La Napolitaine de Cholet",
+      "description": "Pizzeria napolitaine à Cholet : pizzas au feu de bois, pâtes fraîches, gratins maison. 100 % halal. Livraison gratuite 19h–23h dans un rayon de 5 km.",
+      "url": "https://tramonto-cholet.vercel.app/",
+      "image": [
+        "https://tramonto-cholet.vercel.app/og.jpg",
+        "https://tramonto-cholet.vercel.app/photos/facade-jour.jpg",
+        "https://tramonto-cholet.vercel.app/photos/pizza-burrata-table.jpg"
+      ],
+      "logo": "https://tramonto-cholet.vercel.app/icon-512.png",
+      "telephone": "+33244098210",
+      "priceRange": "€€",
+      "servesCuisine": ["Italian", "Pizza", "Napolitaine"],
+      "menu": "https://tramonto-cholet.vercel.app/#menu",
+      "acceptsReservations": "True",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "172 rue Nationale",
+        "addressLocality": "Cholet",
+        "postalCode": "49300",
+        "addressRegion": "Pays de la Loire",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 47.0608,
+        "longitude": -0.8788
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "11:00",
+          "closes": "15:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "18:00",
+          "closes": "00:00"
+        }
+      ],
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Carte Tramonto",
+        "hasMenuSection": [
+          { "@type": "MenuSection", "name": "Pizzas classiques" },
+          { "@type": "MenuSection", "name": "Pizzas signature du chef" },
+          { "@type": "MenuSection", "name": "Les pâtes" },
+          { "@type": "MenuSection", "name": "Gratins" },
+          { "@type": "MenuSection", "name": "Panuozzo & Calzone" }
+        ]
+      },
+      "potentialAction": [
+        {
+          "@type": "OrderAction",
+          "name": "Commander en livraison",
+          "target": "https://www.ubereats.com/fr-en/store/tramonto/LcexGbM0WCK-EyssemjGjQ",
+          "deliveryMethod": "http://purl.org/goodrelations/v1#DeliveryModeOwnFleet"
+        },
+        {
+          "@type": "ReserveAction",
+          "name": "Réserver par téléphone",
+          "target": "tel:+33244098210"
+        }
+      ],
+      "sameAs": [
+        "https://www.ubereats.com/fr-en/store/tramonto/LcexGbM0WCK-EyssemjGjQ"
+      ],
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 47.0608,
+          "longitude": -0.8788
+        },
+        "geoRadius": 5000
+      }
+    }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#menu">Aller au menu</a>
@@ -66,6 +194,7 @@
             <li><a href="#about">La maison</a></li>
             <li><a href="#menu">La carte</a></li>
             <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#reviews">Avis</a></li>
             <li><a href="#offers">Offres</a></li>
             <li><a href="#visit">Nous trouver</a></li>
             <li>
@@ -103,25 +232,32 @@
               à emporter ou livrées chaudes chez vous.
             </p>
             <div class="hero__cta">
-              <a class="btn btn--primary" href="#menu">Découvrir la carte</a>
-              <a
-                class="btn btn--ubereats"
-                href="https://www.ubereats.com/fr-en/store/tramonto/LcexGbM0WCK-EyssemjGjQ"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <span class="ue-wordmark"><strong>Uber</strong> Eats</span>
-                <span class="ue-cta">Commander</span>
-              </a>
-              <a class="btn btn--ghost" href="tel:+33244098210">
+              <a class="btn btn--primary btn--lg btn--pulse" href="#menu">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1L6.6 10.8Z"
-                    fill="currentColor"
-                  />
+                  <path d="M3 7h18v2H3zm0 4h18v2H3zm0 4h12v2H3z" fill="currentColor"/>
                 </svg>
-                02 44 09 82 10
+                Voir la carte
               </a>
+              <div class="hero__cta-secondary">
+                <a
+                  class="btn btn--ubereats btn--sm"
+                  href="https://www.ubereats.com/fr-en/store/tramonto/LcexGbM0WCK-EyssemjGjQ"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <span class="ue-wordmark"><strong>Uber</strong> Eats</span>
+                  <span class="ue-cta">Commander</span>
+                </a>
+                <a class="btn btn--ghost btn--sm" href="tel:+33244098210">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1L6.6 10.8Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  02 44 09 82 10
+                </a>
+              </div>
             </div>
             <ul class="hero__strip">
               <li><strong>Halal</strong><span>100 % de la carte</span></li>
@@ -130,156 +266,43 @@
             </ul>
           </div>
 
-          <div class="hero__visual" aria-hidden="true">
-            <svg class="pizza-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <radialGradient id="board" cx="50%" cy="45%" r="55%">
-                  <stop offset="0%" stop-color="#3a2418" />
-                  <stop offset="100%" stop-color="#1a0e08" />
-                </radialGradient>
-                <radialGradient id="crust" cx="50%" cy="48%" r="52%">
-                  <stop offset="78%" stop-color="#e9b876" />
-                  <stop offset="92%" stop-color="#c98a40" />
-                  <stop offset="100%" stop-color="#7e4a1d" />
-                </radialGradient>
-                <radialGradient id="crustHighlight" cx="42%" cy="38%" r="46%">
-                  <stop offset="0%" stop-color="#fff1c8" stop-opacity="0.5" />
-                  <stop offset="60%" stop-color="#fff1c8" stop-opacity="0" />
-                </radialGradient>
-                <radialGradient id="sauce" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stop-color="#e44d2a" />
-                  <stop offset="55%" stop-color="#c4321a" />
-                  <stop offset="100%" stop-color="#8e1f0a" />
-                </radialGradient>
-                <radialGradient id="sauceShine" cx="40%" cy="35%" r="45%">
-                  <stop offset="0%" stop-color="#ffb78a" stop-opacity="0.55" />
-                  <stop offset="60%" stop-color="#ffb78a" stop-opacity="0" />
-                </radialGradient>
-                <radialGradient id="mozz" cx="40%" cy="40%" r="60%">
-                  <stop offset="0%" stop-color="#fffaee" />
-                  <stop offset="80%" stop-color="#f3e3b6" />
-                  <stop offset="100%" stop-color="#d8b87a" />
-                </radialGradient>
-                <radialGradient id="leaf" cx="40%" cy="35%" r="60%">
-                  <stop offset="0%" stop-color="#a8c95c" />
-                  <stop offset="60%" stop-color="#5d8a2a" />
-                  <stop offset="100%" stop-color="#2f561a" />
-                </radialGradient>
-                <radialGradient id="oil" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stop-color="#fff8c8" stop-opacity="0.85" />
-                  <stop offset="100%" stop-color="#fff8c8" stop-opacity="0" />
-                </radialGradient>
-                <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
-                  <feGaussianBlur stdDeviation="0.6" />
-                </filter>
-                <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-                  <feGaussianBlur in="SourceAlpha" stdDeviation="14" />
-                  <feOffset dx="0" dy="18" result="o" />
-                  <feComponentTransfer><feFuncA type="linear" slope="0.45" /></feComponentTransfer>
-                  <feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge>
-                </filter>
-              </defs>
-
-              <g class="pizza-svg__main" filter="url(#shadow)">
-                <circle cx="300" cy="300" r="270" fill="url(#crust)" />
-                <circle cx="300" cy="300" r="270" fill="url(#crustHighlight)" />
-
-                <g opacity="0.55">
-                  <circle cx="80" cy="240" r="14" fill="#3a1a08" filter="url(#soft)" />
-                  <circle cx="510" cy="220" r="10" fill="#3a1a08" filter="url(#soft)" />
-                  <circle cx="540" cy="350" r="13" fill="#2c1206" filter="url(#soft)" />
-                  <circle cx="120" cy="430" r="11" fill="#3a1a08" filter="url(#soft)" />
-                  <circle cx="350" cy="540" r="9" fill="#2c1206" filter="url(#soft)" />
-                  <circle cx="240" cy="65" r="8" fill="#3a1a08" filter="url(#soft)" />
-                </g>
-
-                <circle cx="300" cy="300" r="220" fill="url(#sauce)" />
-                <circle cx="300" cy="300" r="220" fill="url(#sauceShine)" />
-
-                <g class="pizza-svg__mozz">
-                  <ellipse cx="200" cy="220" rx="42" ry="36" fill="url(#mozz)" transform="rotate(-12 200 220)" />
-                  <ellipse cx="385" cy="200" rx="46" ry="38" fill="url(#mozz)" transform="rotate(18 385 200)" />
-                  <ellipse cx="430" cy="320" rx="40" ry="34" fill="url(#mozz)" transform="rotate(-22 430 320)" />
-                  <ellipse cx="195" cy="380" rx="44" ry="36" fill="url(#mozz)" transform="rotate(28 195 380)" />
-                  <ellipse cx="320" cy="420" rx="42" ry="36" fill="url(#mozz)" transform="rotate(-8 320 420)" />
-                  <ellipse cx="290" cy="285" rx="32" ry="28" fill="url(#mozz)" transform="rotate(14 290 285)" />
-                </g>
-
-                <g class="pizza-svg__leaves">
-                  <g transform="translate(260 175) rotate(-25)">
-                    <path d="M0 0 C 18 -22 42 -18 50 4 C 42 26 18 30 0 8 Z" fill="url(#leaf)" />
-                    <path d="M5 4 L 45 4" stroke="#2f561a" stroke-width="1.4" stroke-linecap="round" opacity="0.7" />
-                  </g>
-                  <g transform="translate(330 350) rotate(38)">
-                    <path d="M0 0 C 18 -22 42 -18 50 4 C 42 26 18 30 0 8 Z" fill="url(#leaf)" />
-                    <path d="M5 4 L 45 4" stroke="#2f561a" stroke-width="1.4" stroke-linecap="round" opacity="0.7" />
-                  </g>
-                  <g transform="translate(150 290) rotate(60) scale(0.85)">
-                    <path d="M0 0 C 18 -22 42 -18 50 4 C 42 26 18 30 0 8 Z" fill="url(#leaf)" />
-                    <path d="M5 4 L 45 4" stroke="#2f561a" stroke-width="1.4" stroke-linecap="round" opacity="0.7" />
-                  </g>
-                  <g transform="translate(370 270) rotate(-50) scale(0.78)">
-                    <path d="M0 0 C 18 -22 42 -18 50 4 C 42 26 18 30 0 8 Z" fill="url(#leaf)" />
-                    <path d="M5 4 L 45 4" stroke="#2f561a" stroke-width="1.4" stroke-linecap="round" opacity="0.7" />
-                  </g>
-                </g>
-
-                <g class="pizza-svg__oil" opacity="0.55">
-                  <ellipse cx="260" cy="240" rx="14" ry="6" fill="url(#oil)" transform="rotate(-20 260 240)" />
-                  <ellipse cx="370" cy="380" rx="18" ry="7" fill="url(#oil)" transform="rotate(15 370 380)" />
-                  <ellipse cx="220" cy="340" rx="11" ry="5" fill="url(#oil)" transform="rotate(40 220 340)" />
-                </g>
-
-                <g class="pizza-svg__cuts" stroke="#bd6f2c" stroke-width="2" stroke-linecap="round" opacity="0.18">
-                  <line x1="80" y1="300" x2="520" y2="300" />
-                  <line x1="300" y1="80" x2="300" y2="520" />
-                  <line x1="144" y1="144" x2="456" y2="456" />
-                  <line x1="456" y1="144" x2="144" y2="456" />
-                </g>
-              </g>
-
-              <g class="pizza-svg__mini" filter="url(#shadow)">
-                <circle cx="500" cy="490" r="92" fill="url(#crust)" />
-                <circle cx="500" cy="490" r="92" fill="url(#crustHighlight)" />
-                <circle cx="500" cy="490" r="72" fill="url(#sauce)" />
-                <ellipse cx="478" cy="468" rx="22" ry="18" fill="url(#mozz)" transform="rotate(-15 478 468)" />
-                <ellipse cx="520" cy="500" rx="20" ry="16" fill="url(#mozz)" transform="rotate(20 520 500)" />
-                <ellipse cx="490" cy="525" rx="18" ry="14" fill="url(#mozz)" />
-                <g transform="translate(485 470) rotate(30) scale(0.55)">
-                  <path d="M0 0 C 18 -22 42 -18 50 4 C 42 26 18 30 0 8 Z" fill="url(#leaf)" />
-                </g>
-              </g>
-
-              <circle class="pizza-svg__sparkle pizza-svg__sparkle--a" cx="60" cy="80" r="8" fill="#ffd877" />
-              <circle class="pizza-svg__sparkle pizza-svg__sparkle--b" cx="565" cy="155" r="6" fill="#ffb347" />
-              <circle class="pizza-svg__sparkle pizza-svg__sparkle--c" cx="40" cy="500" r="5" fill="#ffd877" />
-            </svg>
+          <div class="hero__visual">
+            <span class="hero__visual-disc" aria-hidden="true"></span>
+            <span class="hero__visual-spark hero__visual-spark--a" aria-hidden="true"></span>
+            <span class="hero__visual-spark hero__visual-spark--b" aria-hidden="true"></span>
+            <img
+              class="hero__photo"
+              src="photos/hero-pizza.jpg"
+              alt="Pizza burrata Tramonto : burrata crémeuse, basilic, roquette et tomate San Marzano sur pâte napolitaine"
+              width="1100"
+              height="1100"
+              fetchpriority="high"
+              decoding="async"
+            />
+            <span class="hero__badge" aria-hidden="true">
+              <strong>48 h</strong>
+              <small>fermentation</small>
+            </span>
           </div>
         </div>
       </section>
 
       <section class="about" id="about">
         <div class="container about__grid">
-          <div class="about__media-wrap">
-            <div class="about__media">
-              <img
-                src="photos/facade-jour.jpg"
-                alt="Devanture jaune de Tramonto, 172 rue Nationale à Cholet"
-                loading="lazy"
-                width="900"
-                height="1200"
-              />
-              <div class="about__media-tint" aria-hidden="true"></div>
-              <div class="about__card" aria-hidden="true">
-                <span class="about__chip">depuis 2018</span>
-                <span class="about__title">Forno · 450°C</span>
-                <span class="about__sub">Pâte cuite en 90 secondes</span>
-                <span class="about__flame"></span>
-              </div>
-            </div>
-            <div class="about__sticker" aria-hidden="true">
-              <span>★ ★ ★ ★ ★</span>
-              <small>Cholet, 49300</small>
+          <div class="about__media">
+            <img
+              src="photos/facade-jour.jpg"
+              alt="Devanture jaune de Tramonto, 172 rue Nationale à Cholet"
+              loading="lazy"
+              width="900"
+              height="1200"
+            />
+            <div class="about__media-tint" aria-hidden="true"></div>
+            <div class="about__card" aria-hidden="true">
+              <span class="about__chip">depuis 2018</span>
+              <span class="about__title">Forno · 450°C</span>
+              <span class="about__sub">Pâte cuite en 90 secondes</span>
+              <span class="about__flame"></span>
             </div>
           </div>
           <div class="about__copy">
@@ -681,6 +704,70 @@
         </div>
       </section>
 
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <header class="section-head">
+            <span class="eyebrow">— Vos avis</span>
+            <h2>Ce que disent nos clients sur Google</h2>
+            <div class="reviews__rating" aria-label="Note moyenne 4,6 sur 5 sur Google">
+              <span class="reviews__stars" aria-hidden="true">★★★★★</span>
+              <strong>4,6 / 5</strong>
+              <span class="reviews__count">avis Google · Tramonto Cholet</span>
+            </div>
+          </header>
+
+          <!-- TODO Mathieu : remplace les 3 cartes ci-dessous par 3 vrais avis copiés depuis ta fiche Google Maps. -->
+          <div class="reviews__grid">
+            <article class="review">
+              <div class="review__stars" aria-label="5 sur 5">★★★★★</div>
+              <blockquote>
+                Pizza napolitaine au top, pâte légère et bien aérée. La burrata est généreuse, on sent
+                les bons produits. Service rapide et très accueillant.
+              </blockquote>
+              <footer class="review__author">
+                <strong>Sophie L.</strong>
+                <span>Cliente locale · 2026</span>
+              </footer>
+            </article>
+
+            <article class="review">
+              <div class="review__stars" aria-label="5 sur 5">★★★★★</div>
+              <blockquote>
+                Livraison gratuite, pizza encore chaude à la maison. La Tramonto est devenue notre
+                signature préférée. Halal et de qualité, on recommande à toute la famille.
+              </blockquote>
+              <footer class="review__author">
+                <strong>Karim B.</strong>
+                <span>Client régulier · 2026</span>
+              </footer>
+            </article>
+
+            <article class="review">
+              <div class="review__stars" aria-label="4 sur 5">★★★★<span class="is-empty">★</span></div>
+              <blockquote>
+                Belle découverte au cœur de Cholet. Cadre cosy, banquette confortable, bons cocktails
+                d'apéritif. La carte est variée, on revient sans hésiter.
+              </blockquote>
+              <footer class="review__author">
+                <strong>Émilie R.</strong>
+                <span>Cliente · 2026</span>
+              </footer>
+            </article>
+          </div>
+
+          <div class="reviews__cta">
+            <a
+              class="btn btn--ghost"
+              href="https://www.google.com/maps/search/?api=1&query=Tramonto+172+rue+Nationale+Cholet"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Lire tous les avis sur Google
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section class="offers" id="offers">
         <div class="container">
           <header class="section-head section-head--light">
@@ -870,6 +957,37 @@
         <small>Site conçu avec passion à Cholet</small>
       </div>
     </footer>
+
+    <!-- Sticky mobile order bar -->
+    <div class="mobile-bar" role="region" aria-label="Commander rapidement">
+      <a class="mobile-bar__btn mobile-bar__btn--call" href="tel:+33244098210" aria-label="Appeler Tramonto au 02 44 09 82 10">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1L6.6 10.8Z" fill="currentColor"/>
+        </svg>
+        <span>Appeler</span>
+      </a>
+      <a
+        class="mobile-bar__btn mobile-bar__btn--ue"
+        href="https://www.ubereats.com/fr-en/store/tramonto/LcexGbM0WCK-EyssemjGjQ"
+        target="_blank"
+        rel="noreferrer noopener"
+        aria-label="Commander sur Uber Eats"
+      >
+        <span class="ue-wordmark"><strong>Uber</strong> Eats</span>
+        <span>Commander</span>
+      </a>
+    </div>
+
+    <!-- Lightbox -->
+    <dialog class="lightbox" id="lightbox" aria-label="Galerie photo Tramonto">
+      <button class="lightbox__close" type="button" aria-label="Fermer la galerie">&times;</button>
+      <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Photo précédente">&#8249;</button>
+      <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Photo suivante">&#8250;</button>
+      <figure class="lightbox__figure">
+        <img class="lightbox__img" alt="" />
+        <figcaption class="lightbox__caption"></figcaption>
+      </figure>
+    </dialog>
 
     <script src="script.js" defer></script>
   </body>

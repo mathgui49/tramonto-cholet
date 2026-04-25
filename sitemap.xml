@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://tramonto-cholet.vercel.app/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://tramonto-cholet.vercel.app/og.jpg</image:loc>
+      <image:title>Tramonto · Pizzeria napolitaine à Cholet</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://tramonto-cholet.vercel.app/photos/facade-jour.jpg</image:loc>
+      <image:caption>Façade de Tramonto, 172 rue Nationale à Cholet</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://tramonto-cholet.vercel.app/photos/pizza-burrata-table.jpg</image:loc>
+      <image:caption>Pizza burrata, roquette et San Marzano</image:caption>
+    </image:image>
+  </url>
+</urlset>

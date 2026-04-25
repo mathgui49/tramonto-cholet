@@ -1,0 +1,50 @@
+{
+  "name": "Tramonto · La Napolitaine de Cholet",
+  "short_name": "Tramonto",
+  "description": "Pizzeria napolitaine à Cholet · Pizzas, pâtes, gratins · 100 % halal · Livraison gratuite 19h–23h.",
+  "lang": "fr-FR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0604",
+  "theme_color": "#ff8a3d",
+  "categories": ["food", "restaurant", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Appeler Tramonto",
+      "short_name": "Appeler",
+      "url": "tel:+33244098210"
+    },
+    {
+      "name": "Commander sur Uber Eats",
+      "short_name": "Uber Eats",
+      "url": "https://www.ubereats.com/fr-en/store/tramonto/LcexGbM0WCK-EyssemjGjQ"
+    },
+    {
+      "name": "Voir la carte",
+      "short_name": "La carte",
+      "url": "/#menu"
+    }
+  ]
+}
