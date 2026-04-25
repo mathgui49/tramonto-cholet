@@ -1212,6 +1212,7 @@ button {
 }
 
 .visit__icn svg {
+  display: block;
   width: 22px;
   height: 22px;
 }
@@ -1222,7 +1223,7 @@ button {
   color: var(--c-ink);
 }
 
-.visit__info span,
+.visit__info li > div span,
 .visit__info a {
   display: block;
   color: var(--c-ink-soft);
