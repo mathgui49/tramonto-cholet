@@ -2058,7 +2058,7 @@ button {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
   padding: 0;
 }
 
@@ -2066,7 +2066,6 @@ button {
   background: rgba(232, 90, 42, 0.08);
   color: var(--c-accent);
   border-color: var(--c-accent);
-  transform: rotate(15deg);
 }
 
 .theme-toggle__moon {
