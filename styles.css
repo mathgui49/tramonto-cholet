@@ -605,19 +605,29 @@ button {
   background: var(--c-paper);
   border: 1px solid var(--c-line);
   border-radius: 50%;
-  width: 112px;
-  height: 112px;
-  display: grid;
-  place-items: center;
+  width: 118px;
+  height: 118px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: var(--c-ink);
   box-shadow: var(--shadow);
-  transform: rotate(-12deg);
+  transform: rotate(-10deg);
+  padding: 6px;
+}
+
+.hero__badge-icon {
+  width: 22px;
+  height: 22px;
+  color: var(--c-accent);
+  margin-bottom: 2px;
 }
 
 .hero__badge strong {
   font-family: var(--font-display);
-  font-size: 1.9rem;
+  font-size: 1.85rem;
   letter-spacing: 0.04em;
   color: var(--c-accent);
   line-height: 1;
@@ -626,11 +636,11 @@ button {
 
 .hero__badge small {
   display: block;
-  font-size: 0.66rem;
+  font-size: 0.62rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--c-muted);
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 @keyframes pizzaFloat {
@@ -1188,7 +1198,7 @@ button {
   display: grid;
   grid-template-columns: 44px 1fr;
   gap: 14px;
-  align-items: start;
+  align-items: center;
 }
 
 .visit__icn {
