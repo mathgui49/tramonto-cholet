@@ -18,6 +18,8 @@
   --c-accent-3: #c0341e;
   --c-gold: #d6a85a;
   --c-leaf: #6e8d3a;
+  --c-it-green: #008c45;
+  --c-it-red: #cd212a;
 
   --grad-sunset: linear-gradient(135deg, #ffb347 0%, #ff6b3d 45%, #a01818 100%);
   --grad-warm: linear-gradient(180deg, #fdf6e7 0%, #f6e3c0 100%);
@@ -84,6 +86,21 @@ button {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+/* Thin Italian flag strip at the very top of the page */
+.tricolor {
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    var(--c-it-green) 0%,
+    var(--c-it-green) 33.333%,
+    #f4f5f0 33.333%,
+    #f4f5f0 66.666%,
+    var(--c-it-red) 66.666%,
+    var(--c-it-red) 100%
+  );
 }
 
 .skip-link {
@@ -474,11 +491,20 @@ button {
 .hero__title::after {
   content: "";
   display: block;
-  width: 88px;
+  width: 96px;
   height: 4px;
   margin-top: 22px;
-  background: var(--grad-sunset);
+  background: linear-gradient(
+    to right,
+    #008c45 0%,
+    #008c45 33%,
+    #f4f5f0 33%,
+    #f4f5f0 66%,
+    #cd212a 66%,
+    #cd212a 100%
+  );
   border-radius: 4px;
+  opacity: 0.92;
 }
 
 .hero__lead {
@@ -824,6 +850,14 @@ button {
 .about__points span {
   color: var(--c-accent);
   font-size: 0.6rem;
+}
+
+.about__points li:nth-child(4n + 1) span {
+  color: var(--c-it-green);
+}
+
+.about__points li:nth-child(4n + 3) span {
+  color: var(--c-it-red);
 }
 
 /* ============================================================
