@@ -104,6 +104,22 @@ async function makeIcons() {
   console.log("icon-maskable-512.png", maskBuf.length);
 }
 
+// ---------- WebP versions of every photo ----------
+async function makeWebp() {
+  const { readdir } = await import("node:fs/promises");
+  const dir = resolve(root, "photos");
+  const files = (await readdir(dir)).filter((f) => /\.(jpe?g|png)$/i.test(f));
+  for (const f of files) {
+    const inPath = resolve(dir, f);
+    const outPath = resolve(dir, f.replace(/\.(jpe?g|png)$/i, ".webp"));
+    const buf = await sharp(inPath).webp({ quality: 78, effort: 5 }).toBuffer();
+    const { writeFile } = await import("node:fs/promises");
+    await writeFile(outPath, buf);
+    console.log(outPath.replace(root, ""), buf.length, "bytes");
+  }
+}
+
 await makeOg();
 await makeIcons();
+await makeWebp();
 console.log("done");

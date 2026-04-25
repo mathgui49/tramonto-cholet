@@ -5,6 +5,46 @@
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // Open / closed status (7j/7 · 11h–15h · 18h–24h)
+  const statusEl = document.getElementById("openStatus");
+  if (statusEl) {
+    const dotEl = statusEl.querySelector(".status__dot");
+    const textEl = statusEl.querySelector(".status__text");
+    const slots = [
+      [11 * 60, 15 * 60],
+      [18 * 60, 24 * 60],
+    ];
+    const fmt = (m) => {
+      const h = Math.floor(m / 60) % 24;
+      const mm = m % 60;
+      return mm === 0 ? h + "h" : h + "h" + String(mm).padStart(2, "0");
+    };
+    const updateStatus = () => {
+      const now = new Date();
+      const minutes = now.getHours() * 60 + now.getMinutes();
+      let openSlot = null;
+      let nextOpen = null;
+      for (const [s, e] of slots) {
+        if (minutes >= s && minutes < e) { openSlot = [s, e]; break; }
+        if (minutes < s && (nextOpen === null || s < nextOpen)) nextOpen = s;
+      }
+      statusEl.classList.remove("status--unknown", "status--open", "status--closed");
+      if (openSlot) {
+        statusEl.classList.add("status--open");
+        textEl.textContent = "Ouvert · ferme à " + fmt(openSlot[1]);
+      } else {
+        statusEl.classList.add("status--closed");
+        if (nextOpen !== null) {
+          textEl.textContent = "Fermé · ouvre à " + fmt(nextOpen);
+        } else {
+          textEl.textContent = "Fermé · ouvre demain à 11h";
+        }
+      }
+    };
+    updateStatus();
+    setInterval(updateStatus, 60 * 1000);
+  }
+
   // Theme toggle (persisted in localStorage)
   const themeToggle = document.getElementById("themeToggle");
   const themeMeta = document.querySelector('meta[name="theme-color"]');

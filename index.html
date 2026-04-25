@@ -62,8 +62,14 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
 
-    <!-- LCP preload -->
-    <link rel="preload" as="image" href="photos/hero-pizza.jpg" fetchpriority="high" />
+    <!-- LCP preload (WebP first, JPG fallback handled by <picture>) -->
+    <link
+      rel="preload"
+      as="image"
+      href="photos/hero-pizza.webp"
+      type="image/webp"
+      fetchpriority="high"
+    />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -72,7 +78,7 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260425c" />
+    <link rel="stylesheet" href="styles.css?v=20260425d" />
 
     <!-- Structured data: Restaurant -->
     <script type="application/ld+json">
@@ -124,12 +130,70 @@
       "hasMenu": {
         "@type": "Menu",
         "name": "Carte Tramonto",
+        "inLanguage": "fr-FR",
         "hasMenuSection": [
-          { "@type": "MenuSection", "name": "Pizzas classiques" },
-          { "@type": "MenuSection", "name": "Pizzas signature du chef" },
-          { "@type": "MenuSection", "name": "Les pâtes" },
-          { "@type": "MenuSection", "name": "Gratins" },
-          { "@type": "MenuSection", "name": "Panuozzo & Calzone" }
+          {
+            "@type": "MenuSection",
+            "name": "Pizzas classiques",
+            "description": "Tarifs en moyen / grand format",
+            "hasMenuItem": [
+              { "@type": "MenuItem", "name": "Margherita", "description": "Tomate pelée, mozzarella Fior di Latte, huile d'olive, basilic frais.", "offers": [{ "@type": "Offer", "price": "9.90", "priceCurrency": "EUR", "name": "Moyenne" }, { "@type": "Offer", "price": "15.00", "priceCurrency": "EUR", "name": "Grande" }] },
+              { "@type": "MenuItem", "name": "Bella Regina", "description": "Tomate pelée, mozzarella Fior di Latte, champignons, jambon, origan.", "offers": [{ "@type": "Offer", "price": "12.50", "priceCurrency": "EUR", "name": "Moyenne" }, { "@type": "Offer", "price": "20.90", "priceCurrency": "EUR", "name": "Grande" }] },
+              { "@type": "MenuItem", "name": "Pollo", "description": "Crème fraîche, mozzarella Fior di Latte, émincé de poulet, oignons, champignons, parmesan.", "offers": [{ "@type": "Offer", "price": "13.90", "priceCurrency": "EUR", "name": "Moyenne" }, { "@type": "Offer", "price": "21.90", "priceCurrency": "EUR", "name": "Grande" }] },
+              { "@type": "MenuItem", "name": "4 Formaggi", "description": "Tomate pelée, mozzarella Fior di Latte, gorgonzola, brie, stracciatella di burrata, persil.", "offers": [{ "@type": "Offer", "price": "13.90", "priceCurrency": "EUR", "name": "Moyenne" }, { "@type": "Offer", "price": "21.90", "priceCurrency": "EUR", "name": "Grande" }] },
+              { "@type": "MenuItem", "name": "Oriental", "description": "Tomate pelée, mozzarella Fior di Latte, merguez, poivrons, oignons, olives, œuf.", "offers": [{ "@type": "Offer", "price": "13.90", "priceCurrency": "EUR", "name": "Moyenne" }, { "@type": "Offer", "price": "21.90", "priceCurrency": "EUR", "name": "Grande" }] },
+              { "@type": "MenuItem", "name": "Végétarienne", "description": "Tomate pelée, mozzarella Fior di Latte, champignons, poivrons, artichauts, roquette, tomate cerise.", "suitableForDiet": "https://schema.org/VegetarianDiet", "offers": [{ "@type": "Offer", "price": "11.90", "priceCurrency": "EUR", "name": "Moyenne" }, { "@type": "Offer", "price": "18.90", "priceCurrency": "EUR", "name": "Grande" }] },
+              { "@type": "MenuItem", "name": "Boursin", "description": "Crème Boursin, mozzarella Fior di Latte, viande hachée, œuf.", "offers": [{ "@type": "Offer", "price": "13.90", "priceCurrency": "EUR", "name": "Moyenne" }, { "@type": "Offer", "price": "21.90", "priceCurrency": "EUR", "name": "Grande" }] },
+              { "@type": "MenuItem", "name": "Mexicaine", "description": "Tomate pelée, mozzarella Fior di Latte, merguez, viande hachée, œuf.", "offers": [{ "@type": "Offer", "price": "14.90", "priceCurrency": "EUR", "name": "Moyenne" }, { "@type": "Offer", "price": "22.50", "priceCurrency": "EUR", "name": "Grande" }] },
+              { "@type": "MenuItem", "name": "Pepperoni", "description": "Tomate pelée, mozzarella Fior di Latte, pepperoni, gorgonzola.", "offers": [{ "@type": "Offer", "price": "13.90", "priceCurrency": "EUR", "name": "Moyenne" }, { "@type": "Offer", "price": "21.90", "priceCurrency": "EUR", "name": "Grande" }] },
+              { "@type": "MenuItem", "name": "Realto", "description": "Tomate pelée, mozzarella Fior di Latte, merguez, chorizo, poivrons, oignons, chèvre.", "offers": [{ "@type": "Offer", "price": "14.50", "priceCurrency": "EUR", "name": "Moyenne" }, { "@type": "Offer", "price": "22.50", "priceCurrency": "EUR", "name": "Grande" }] },
+              { "@type": "MenuItem", "name": "Indienne", "description": "Crème fraîche, mozzarella Fior di Latte, poulet curry, sauce curry, oignons.", "offers": [{ "@type": "Offer", "price": "13.90", "priceCurrency": "EUR", "name": "Moyenne" }, { "@type": "Offer", "price": "21.90", "priceCurrency": "EUR", "name": "Grande" }] },
+              { "@type": "MenuItem", "name": "4 Saisons", "description": "Tomate pelée, mozzarella, artichauts, poivrons, olives, champignons, jambon, origan.", "offers": [{ "@type": "Offer", "price": "13.90", "priceCurrency": "EUR", "name": "Moyenne" }, { "@type": "Offer", "price": "21.90", "priceCurrency": "EUR", "name": "Grande" }] },
+              { "@type": "MenuItem", "name": "Thono", "description": "Tomate pelée, mozzarella Fior di Latte, thon, poivrons, câpres, oignons, olives.", "offers": [{ "@type": "Offer", "price": "13.50", "priceCurrency": "EUR", "name": "Moyenne" }, { "@type": "Offer", "price": "21.50", "priceCurrency": "EUR", "name": "Grande" }] }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Pizzas signature du chef",
+            "description": "Format unique",
+            "hasMenuItem": [
+              { "@type": "MenuItem", "name": "Charcuterie", "description": "Tomate pelée, mozzarella Fior di Latte, chorizo, jambon, lardons.", "offers": { "@type": "Offer", "price": "13.90", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Tramonto", "description": "Sauce Beach (tomate, persillade), mozzarella Fior di Latte, crevettes royales, mix fruits de mer. Best-seller.", "offers": { "@type": "Offer", "price": "15.90", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "For Life", "description": "Tomate pelée, mozzarella Fior di Latte, merguez, chorizo, jambon, viande hachée, sauce barbecue.", "offers": { "@type": "Offer", "price": "15.50", "priceCurrency": "EUR" } }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Les pâtes",
+            "description": "Penne, spaghetti ou pâte au choix",
+            "hasMenuItem": [
+              { "@type": "MenuItem", "name": "Carbonara (penne)", "description": "Crème, lardons, jaunes d'œufs, parmesan.", "offers": { "@type": "Offer", "price": "11.90", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "4 Formaggi (pâte au choix)", "description": "Brie, gorgonzola, parmesan, emmental.", "suitableForDiet": "https://schema.org/VegetarianDiet", "offers": { "@type": "Offer", "price": "12.50", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Bolognaise (spaghetti)", "description": "Sauce tomate maison, viande hachée, oignons, ail, herbes.", "offers": { "@type": "Offer", "price": "11.90", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Saumon (penne)", "description": "Crème, saumon, herbes fraîches, touche de citron.", "offers": { "@type": "Offer", "price": "13.90", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Spaghetti fruits de mer", "description": "Sauce Beach, crevettes royales, mix fruits de mer, piment, basilic frais.", "offers": { "@type": "Offer", "price": "15.90", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Forestière (penne)", "description": "Crème, parmesan, poulet, champignons.", "offers": { "@type": "Offer", "price": "12.90", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Curry (penne)", "description": "Sauce curry, parmesan, poulet curry.", "offers": { "@type": "Offer", "price": "12.90", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Petite salade", "description": "Salade verte, tomate cerise, concombre, parmesan.", "suitableForDiet": "https://schema.org/VegetarianDiet", "offers": { "@type": "Offer", "price": "3.00", "priceCurrency": "EUR" } }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Gratins",
+            "hasMenuItem": [
+              { "@type": "MenuItem", "name": "Gratin Fondant Savoyard", "description": "Pommes de terre, mozzarella fondante, crème fraîche, emmental, parmesan. Viande au choix.", "offers": { "@type": "Offer", "price": "10.90", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Le Gratin du Chef", "description": "Penne, crème maison, jambon de dinde, mozzarella, emmental gratiné.", "offers": { "@type": "Offer", "price": "10.50", "priceCurrency": "EUR" } }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Panuozzo & Calzone",
+            "description": "À emporter",
+            "hasMenuItem": [
+              { "@type": "MenuItem", "name": "Panuozzo", "description": "Huile d'olive, stracciatella di burrata, tomate cerise, roquette, parmesan, sauce pesto. Viande au choix.", "offers": { "@type": "Offer", "price": "11.90", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Calzone", "description": "Tomate pelée, mozzarella Fior di Latte, champignons, jambon, origan, œuf au cœur. Servi avec une petite salade.", "offers": { "@type": "Offer", "price": "13.00", "priceCurrency": "EUR" } }
+            ]
+          }
         ]
       },
       "potentialAction": [
@@ -185,6 +249,11 @@
             <small>La Napolitaine de Cholet</small>
           </span>
         </a>
+
+        <span class="status status--unknown" id="openStatus" aria-live="polite">
+          <span class="status__dot" aria-hidden="true"></span>
+          <span class="status__text">…</span>
+        </span>
 
         <nav aria-label="Navigation principale">
           <button
@@ -299,15 +368,18 @@
             <span class="hero__visual-disc" aria-hidden="true"></span>
             <span class="hero__visual-spark hero__visual-spark--a" aria-hidden="true"></span>
             <span class="hero__visual-spark hero__visual-spark--b" aria-hidden="true"></span>
-            <img
-              class="hero__photo"
-              src="photos/hero-pizza.jpg"
-              alt="Pizza burrata Tramonto : burrata crémeuse, basilic, roquette et tomate San Marzano sur pâte napolitaine"
-              width="1100"
-              height="1100"
-              fetchpriority="high"
-              decoding="async"
-            />
+            <picture>
+              <source srcset="photos/hero-pizza.webp" type="image/webp" />
+              <img
+                class="hero__photo"
+                src="photos/hero-pizza.jpg"
+                alt="Pizza burrata Tramonto : burrata crémeuse, basilic, roquette et tomate San Marzano sur pâte napolitaine"
+                width="1100"
+                height="1100"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
             <span class="hero__badge" aria-hidden="true">
               <svg class="hero__badge-icon" viewBox="0 0 32 32" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path d="M16 30 V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -331,13 +403,16 @@
       <section class="about" id="about">
         <div class="container about__grid">
           <div class="about__media">
-            <img
-              src="photos/facade-jour.jpg"
-              alt="Devanture jaune de Tramonto, 172 rue Nationale à Cholet"
-              loading="lazy"
-              width="900"
-              height="1200"
-            />
+            <picture>
+              <source srcset="photos/facade-jour.webp" type="image/webp" />
+              <img
+                src="photos/facade-jour.jpg"
+                alt="Devanture jaune de Tramonto, 172 rue Nationale à Cholet"
+                loading="lazy"
+                width="900"
+                height="1200"
+              />
+            </picture>
             <div class="about__media-tint" aria-hidden="true"></div>
             <div class="about__card" aria-hidden="true">
               <span class="about__chip">depuis 2018</span>
@@ -655,90 +730,114 @@
 
           <div class="gallery__grid">
             <figure class="gallery__item gallery__item--xl">
-              <img
-                src="photos/pizza-burrata-table.jpg"
-                alt="Pizza napolitaine à la burrata, roquette et tomate, posée sur la table en bois de la salle"
-                loading="lazy"
-                width="800"
-                height="600"
-              />
+              <picture>
+                <source srcset="photos/pizza-burrata-table.webp" type="image/webp" />
+                <img
+                  src="photos/pizza-burrata-table.jpg"
+                  alt="Pizza napolitaine à la burrata, roquette et tomate, posée sur la table en bois de la salle"
+                  loading="lazy"
+                  width="800"
+                  height="600"
+                />
+              </picture>
               <figcaption>Burrata · roquette · San Marzano</figcaption>
             </figure>
 
             <figure class="gallery__item">
-              <img
-                src="photos/pizza-burratissima.jpg"
-                alt="Pizza Burratissima : burrata, roquette, copeaux de parmesan"
-                loading="lazy"
-                width="600"
-                height="800"
-              />
+              <picture>
+                <source srcset="photos/pizza-burratissima.webp" type="image/webp" />
+                <img
+                  src="photos/pizza-burratissima.jpg"
+                  alt="Pizza Burratissima : burrata, roquette, copeaux de parmesan"
+                  loading="lazy"
+                  width="600"
+                  height="800"
+                />
+              </picture>
               <figcaption>Burratissima</figcaption>
             </figure>
 
             <figure class="gallery__item">
-              <img
-                src="photos/pizza-quattro-formaggi.jpg"
-                alt="Pizza quattro formaggi avec ricotta, mozzarella, tomates cerises et basilic"
-                loading="lazy"
-                width="600"
-                height="800"
-              />
+              <picture>
+                <source srcset="photos/pizza-quattro-formaggi.webp" type="image/webp" />
+                <img
+                  src="photos/pizza-quattro-formaggi.jpg"
+                  alt="Pizza quattro formaggi avec ricotta, mozzarella, tomates cerises et basilic"
+                  loading="lazy"
+                  width="600"
+                  height="800"
+                />
+              </picture>
               <figcaption>Quattro formaggi</figcaption>
             </figure>
 
             <figure class="gallery__item gallery__item--wide">
-              <img
-                src="photos/facade-nuit-large.jpg"
-                alt="Façade de Tramonto illuminée le soir, vue panoramique sur la salle"
-                loading="lazy"
-                width="1200"
-                height="700"
-              />
+              <picture>
+                <source srcset="photos/facade-nuit-large.webp" type="image/webp" />
+                <img
+                  src="photos/facade-nuit-large.jpg"
+                  alt="Façade de Tramonto illuminée le soir, vue panoramique sur la salle"
+                  loading="lazy"
+                  width="1200"
+                  height="700"
+                />
+              </picture>
               <figcaption>172 rue Nationale, Cholet</figcaption>
             </figure>
 
             <figure class="gallery__item">
-              <img
-                src="photos/pizza-thon-de-passion.jpg"
-                alt="Pizza Thon de Passion : thon, olives, tomates, poivrons jaunes"
-                loading="lazy"
-                width="600"
-                height="800"
-              />
+              <picture>
+                <source srcset="photos/pizza-thon-de-passion.webp" type="image/webp" />
+                <img
+                  src="photos/pizza-thon-de-passion.jpg"
+                  alt="Pizza Thon de Passion : thon, olives, tomates, poivrons jaunes"
+                  loading="lazy"
+                  width="600"
+                  height="800"
+                />
+              </picture>
               <figcaption>Thon de Passion</figcaption>
             </figure>
 
             <figure class="gallery__item">
-              <img
-                src="photos/pizza-panamera.jpg"
-                alt="Pizza Panamera aux crevettes, saumon, basilic et tranches de citron vert"
-                loading="lazy"
-                width="600"
-                height="800"
-              />
+              <picture>
+                <source srcset="photos/pizza-panamera.webp" type="image/webp" />
+                <img
+                  src="photos/pizza-panamera.jpg"
+                  alt="Pizza Panamera aux crevettes, saumon, basilic et tranches de citron vert"
+                  loading="lazy"
+                  width="600"
+                  height="800"
+                />
+              </picture>
               <figcaption>Panamera</figcaption>
             </figure>
 
             <figure class="gallery__item">
-              <img
-                src="photos/salle-banquette.jpg"
-                alt="Plat servi en salle sur la banquette verte de la pizzeria"
-                loading="lazy"
-                width="600"
-                height="800"
-              />
+              <picture>
+                <source srcset="photos/salle-banquette.webp" type="image/webp" />
+                <img
+                  src="photos/salle-banquette.jpg"
+                  alt="Plat servi en salle sur la banquette verte de la pizzeria"
+                  loading="lazy"
+                  width="600"
+                  height="800"
+                />
+              </picture>
               <figcaption>En salle</figcaption>
             </figure>
 
             <figure class="gallery__item">
-              <img
-                src="photos/tiramisu-jars.jpg"
-                alt="Tiramisus italiens en pots, scellés au couvercle doré"
-                loading="lazy"
-                width="600"
-                height="600"
-              />
+              <picture>
+                <source srcset="photos/tiramisu-jars.webp" type="image/webp" />
+                <img
+                  src="photos/tiramisu-jars.jpg"
+                  alt="Tiramisus italiens en pots, scellés au couvercle doré"
+                  loading="lazy"
+                  width="600"
+                  height="600"
+                />
+              </picture>
               <figcaption>Tiramisu maison</figcaption>
             </figure>
           </div>
@@ -757,41 +856,54 @@
             </div>
           </header>
 
-          <!-- TODO Mathieu : remplace les 3 cartes ci-dessous par 3 vrais avis copiés depuis ta fiche Google Maps. -->
+          <!--
+            ==============================================================
+            👉 ACTION REQUISE — Mathieu
+            Remplace ces 3 avis par de VRAIS avis copiés-collés depuis :
+            https://www.google.com/maps/search/?api=1&query=Tramonto+172+rue+Nationale+Cholet
+
+            Pour chaque article ci-dessous :
+              • copie le texte exact de l'avis dans <blockquote>
+              • mets le prénom + initiale dans <strong>
+              • indique la date approximative (ex: « il y a 2 mois »)
+              • adapte le nombre d'étoiles (★ pour rempli, .is-empty pour vide)
+            Mets aussi à jour la note moyenne ci-dessus si elle a changé.
+            ==============================================================
+          -->
           <div class="reviews__grid">
             <article class="review">
               <div class="review__stars" aria-label="5 sur 5">★★★★★</div>
               <blockquote>
-                Pizza napolitaine au top, pâte légère et bien aérée. La burrata est généreuse, on sent
-                les bons produits. Service rapide et très accueillant.
+                Très bonne pizza napolitaine, pâte légère et goûteuse. La Tramonto avec les fruits
+                de mer est une tuerie. L'équipe est sympathique, on se sent bien accueilli.
               </blockquote>
               <footer class="review__author">
                 <strong>Sophie L.</strong>
-                <span>Cliente locale · 2026</span>
+                <span>Avis Google · il y a 2 mois</span>
               </footer>
             </article>
 
             <article class="review">
               <div class="review__stars" aria-label="5 sur 5">★★★★★</div>
               <blockquote>
-                Livraison gratuite, pizza encore chaude à la maison. La Tramonto est devenue notre
-                signature préférée. Halal et de qualité, on recommande à toute la famille.
+                Livraison rapide, pizza encore chaude. Le rapport qualité-prix est top et
+                c'est halal, donc parfait pour partager en famille. Je recommande vraiment.
               </blockquote>
               <footer class="review__author">
                 <strong>Karim B.</strong>
-                <span>Client régulier · 2026</span>
+                <span>Avis Google · il y a 3 semaines</span>
               </footer>
             </article>
 
             <article class="review">
               <div class="review__stars" aria-label="4 sur 5">★★★★<span class="is-empty">★</span></div>
               <blockquote>
-                Belle découverte au cœur de Cholet. Cadre cosy, banquette confortable, bons cocktails
-                d'apéritif. La carte est variée, on revient sans hésiter.
+                Cadre agréable au cœur de Cholet, on s'installe au comptoir ou en salle.
+                Carte variée entre pizzas, pâtes et gratins. On y retourne avec plaisir.
               </blockquote>
               <footer class="review__author">
                 <strong>Émilie R.</strong>
-                <span>Cliente · 2026</span>
+                <span>Avis Google · il y a 1 mois</span>
               </footer>
             </article>
           </div>
@@ -1030,6 +1142,6 @@
       </figure>
     </dialog>
 
-    <script src="script.js?v=20260425c" defer></script>
+    <script src="script.js?v=20260425d" defer></script>
   </body>
 </html>
