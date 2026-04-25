@@ -426,6 +426,13 @@ button {
   margin-top: 4px;
 }
 
+/* Nav element wraps toggle + burger + menu */
+.nav__inner > nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .nav__menu {
   list-style: none;
   margin: 0;
@@ -2296,20 +2303,10 @@ button {
 }
 
 @media (max-width: 760px) {
-  .nav__menu .theme-toggle {
-    width: 100%;
-    border-radius: 12px;
-    height: 48px;
-    justify-content: flex-start;
-    padding: 0 18px;
-    gap: 10px;
-  }
-  .nav__menu .theme-toggle::after {
-    content: "Thème sombre";
-    font-size: 0.95rem;
-  }
-  [data-theme="dark"] .nav__menu .theme-toggle::after {
-    content: "Thème clair";
+  /* Theme toggle stays visible next to the burger on mobile */
+  .nav__inner > nav .theme-toggle {
+    width: 40px;
+    height: 40px;
   }
 }
 
