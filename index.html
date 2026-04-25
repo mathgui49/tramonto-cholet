@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <title>Tramonto · La Napolitaine de Cholet</title>
+    <meta
+      name="description"
+      content="Tramonto, la pizzeria napolitaine de Cholet. Pizzas au feu, pâtes fraîches, gratins maison. Livraison gratuite dès 25 €. 172 rue Nationale, Cholet."
+    />
+    <meta name="author" content="Tramonto" />
+    <meta property="og:title" content="Tramonto · La Napolitaine de Cholet" />
+    <meta
+      property="og:description"
+      content="Pizzas napolitaines, pâtes, gratins. Livraison gratuite dès 25 €. 172 rue Nationale, Cholet."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#menu">Aller au menu</a>
+
+    <header class="nav" id="top">
+      <div class="container nav__inner">
+        <a class="brand" href="#top" aria-label="Tramonto, accueil">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="20" r="10" fill="url(#sun)" />
+              <path d="M2 22h28" stroke="#0a0a0a" stroke-width="2" stroke-linecap="round" />
+              <defs>
+                <linearGradient id="sun" x1="6" y1="10" x2="26" y2="30" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#ffb347" />
+                  <stop offset="0.55" stop-color="#ff6b3d" />
+                  <stop offset="1" stop-color="#a01818" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          <span class="brand__name">
+            Tramonto
+            <small>La Napolitaine de Cholet</small>
+          </span>
+        </a>
+
+        <nav aria-label="Navigation principale">
+          <button
+            class="nav__toggle"
+            type="button"
+            aria-controls="primary-menu"
+            aria-expanded="false"
+            id="navToggle"
+          >
+            <span class="sr-only">Ouvrir le menu</span>
+            <span class="nav__toggle-bars" aria-hidden="true"></span>
+          </button>
+          <ul class="nav__menu" id="primary-menu">
+            <li><a href="#about">La maison</a></li>
+            <li><a href="#menu">La carte</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#offers">Offres</a></li>
+            <li><a href="#visit">Nous trouver</a></li>
+            <li>
+              <a class="btn btn--primary btn--sm" href="tel:+33244098210">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1L6.6 10.8Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                02 44 09 82 10
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__bg" aria-hidden="true">
+          <span class="hero__sun"></span>
+          <span class="hero__glow hero__glow--a"></span>
+          <span class="hero__glow hero__glow--b"></span>
+        </div>
+        <div class="container hero__inner">
+          <div class="hero__copy">
+            <span class="eyebrow">— La pizzeria napolitaine de Cholet</span>
+            <h1 class="hero__title">
+              Le goût d'Italie,<br />
+              au coucher du soleil.
+            </h1>
+            <p class="hero__lead">
+              Pâte fermentée 48 h, mozzarella fior di latte, tomates San Marzano. À déguster sur place,
+              à emporter ou livrées chaudes chez vous.
+            </p>
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#menu">Découvrir la carte</a>
+              <a
+                class="btn btn--ubereats"
+                href="https://www.ubereats.com/fr-en/store/tramonto/LcexGbM0WCK-EyssemjGjQ"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <span class="ue-wordmark"><strong>Uber</strong> Eats</span>
+                <span class="ue-cta">Commander</span>
+              </a>
+              <a class="btn btn--ghost" href="tel:+33244098210">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1L6.6 10.8Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                02 44 09 82 10
+              </a>
+            </div>
+            <ul class="hero__strip">
+              <li><strong>Halal</strong><span>100 % de la carte</span></li>
+              <li><strong>19 h — 23 h</strong><span>livraison gratuite · 5 km</span></li>
+              <li><strong>Uber Eats</strong><span>commande en ligne</span></li>
+            </ul>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <svg class="pizza-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="board" cx="50%" cy="45%" r="55%">
+                  <stop offset="0%" stop-color="#3a2418" />
+                  <stop offset="100%" stop-color="#1a0e08" />
+                </radialGradient>
+                <radialGradient id="crust" cx="50%" cy="48%" r="52%">
+                  <stop offset="78%" stop-color="#e9b876" />
+                  <stop offset="92%" stop-color="#c98a40" />
+                  <stop offset="100%" stop-color="#7e4a1d" />
+                </radialGradient>
+                <radialGradient id="crustHighlight" cx="42%" cy="38%" r="46%">
+                  <stop offset="0%" stop-color="#fff1c8" stop-opacity="0.5" />
+                  <stop offset="60%" stop-color="#fff1c8" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient id="sauce" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#e44d2a" />
+                  <stop offset="55%" stop-color="#c4321a" />
+                  <stop offset="100%" stop-color="#8e1f0a" />
+                </radialGradient>
+                <radialGradient id="sauceShine" cx="40%" cy="35%" r="45%">
+                  <stop offset="0%" stop-color="#ffb78a" stop-opacity="0.55" />
+                  <stop offset="60%" stop-color="#ffb78a" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient id="mozz" cx="40%" cy="40%" r="60%">
+                  <stop offset="0%" stop-color="#fffaee" />
+                  <stop offset="80%" stop-color="#f3e3b6" />
+                  <stop offset="100%" stop-color="#d8b87a" />
+                </radialGradient>
+                <radialGradient id="leaf" cx="40%" cy="35%" r="60%">
+                  <stop offset="0%" stop-color="#a8c95c" />
+                  <stop offset="60%" stop-color="#5d8a2a" />
+                  <stop offset="100%" stop-color="#2f561a" />
+                </radialGradient>
+                <radialGradient id="oil" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#fff8c8" stop-opacity="0.85" />
+                  <stop offset="100%" stop-color="#fff8c8" stop-opacity="0" />
+                </radialGradient>
+                <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="0.6" />
+                </filter>
+                <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur in="SourceAlpha" stdDeviation="14" />
+                  <feOffset dx="0" dy="18" result="o" />
+                  <feComponentTransfer><feFuncA type="linear" slope="0.45" /></feComponentTransfer>
+                  <feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge>
+                </filter>
+              </defs>
+
+              <g class="pizza-svg__main" filter="url(#shadow)">
+                <circle cx="300" cy="300" r="270" fill="url(#crust)" />
+                <circle cx="300" cy="300" r="270" fill="url(#crustHighlight)" />
+
+                <g opacity="0.55">
+                  <circle cx="80" cy="240" r="14" fill="#3a1a08" filter="url(#soft)" />
+                  <circle cx="510" cy="220" r="10" fill="#3a1a08" filter="url(#soft)" />
+                  <circle cx="540" cy="350" r="13" fill="#2c1206" filter="url(#soft)" />
+                  <circle cx="120" cy="430" r="11" fill="#3a1a08" filter="url(#soft)" />
+                  <circle cx="350" cy="540" r="9" fill="#2c1206" filter="url(#soft)" />
+                  <circle cx="240" cy="65" r="8" fill="#3a1a08" filter="url(#soft)" />
+                </g>
+
+                <circle cx="300" cy="300" r="220" fill="url(#sauce)" />
+                <circle cx="300" cy="300" r="220" fill="url(#sauceShine)" />
+
+                <g class="pizza-svg__mozz">
+                  <ellipse cx="200" cy="220" rx="42" ry="36" fill="url(#mozz)" transform="rotate(-12 200 220)" />
+                  <ellipse cx="385" cy="200" rx="46" ry="38" fill="url(#mozz)" transform="rotate(18 385 200)" />
+                  <ellipse cx="430" cy="320" rx="40" ry="34" fill="url(#mozz)" transform="rotate(-22 430 320)" />
+                  <ellipse cx="195" cy="380" rx="44" ry="36" fill="url(#mozz)" transform="rotate(28 195 380)" />
+                  <ellipse cx="320" cy="420" rx="42" ry="36" fill="url(#mozz)" transform="rotate(-8 320 420)" />
+                  <ellipse cx="290" cy="285" rx="32" ry="28" fill="url(#mozz)" transform="rotate(14 290 285)" />
+                </g>
+
+                <g class="pizza-svg__leaves">
+                  <g transform="translate(260 175) rotate(-25)">
+                    <path d="M0 0 C 18 -22 42 -18 50 4 C 42 26 18 30 0 8 Z" fill="url(#leaf)" />
+                    <path d="M5 4 L 45 4" stroke="#2f561a" stroke-width="1.4" stroke-linecap="round" opacity="0.7" />
+                  </g>
+                  <g transform="translate(330 350) rotate(38)">
+                    <path d="M0 0 C 18 -22 42 -18 50 4 C 42 26 18 30 0 8 Z" fill="url(#leaf)" />
+                    <path d="M5 4 L 45 4" stroke="#2f561a" stroke-width="1.4" stroke-linecap="round" opacity="0.7" />
+                  </g>
+                  <g transform="translate(150 290) rotate(60) scale(0.85)">
+                    <path d="M0 0 C 18 -22 42 -18 50 4 C 42 26 18 30 0 8 Z" fill="url(#leaf)" />
+                    <path d="M5 4 L 45 4" stroke="#2f561a" stroke-width="1.4" stroke-linecap="round" opacity="0.7" />
+                  </g>
+                  <g transform="translate(370 270) rotate(-50) scale(0.78)">
+                    <path d="M0 0 C 18 -22 42 -18 50 4 C 42 26 18 30 0 8 Z" fill="url(#leaf)" />
+                    <path d="M5 4 L 45 4" stroke="#2f561a" stroke-width="1.4" stroke-linecap="round" opacity="0.7" />
+                  </g>
+                </g>
+
+                <g class="pizza-svg__oil" opacity="0.55">
+                  <ellipse cx="260" cy="240" rx="14" ry="6" fill="url(#oil)" transform="rotate(-20 260 240)" />
+                  <ellipse cx="370" cy="380" rx="18" ry="7" fill="url(#oil)" transform="rotate(15 370 380)" />
+                  <ellipse cx="220" cy="340" rx="11" ry="5" fill="url(#oil)" transform="rotate(40 220 340)" />
+                </g>
+
+                <g class="pizza-svg__cuts" stroke="#bd6f2c" stroke-width="2" stroke-linecap="round" opacity="0.18">
+                  <line x1="80" y1="300" x2="520" y2="300" />
+                  <line x1="300" y1="80" x2="300" y2="520" />
+                  <line x1="144" y1="144" x2="456" y2="456" />
+                  <line x1="456" y1="144" x2="144" y2="456" />
+                </g>
+              </g>
+
+              <g class="pizza-svg__mini" filter="url(#shadow)">
+                <circle cx="500" cy="490" r="92" fill="url(#crust)" />
+                <circle cx="500" cy="490" r="92" fill="url(#crustHighlight)" />
+                <circle cx="500" cy="490" r="72" fill="url(#sauce)" />
+                <ellipse cx="478" cy="468" rx="22" ry="18" fill="url(#mozz)" transform="rotate(-15 478 468)" />
+                <ellipse cx="520" cy="500" rx="20" ry="16" fill="url(#mozz)" transform="rotate(20 520 500)" />
+                <ellipse cx="490" cy="525" rx="18" ry="14" fill="url(#mozz)" />
+                <g transform="translate(485 470) rotate(30) scale(0.55)">
+                  <path d="M0 0 C 18 -22 42 -18 50 4 C 42 26 18 30 0 8 Z" fill="url(#leaf)" />
+                </g>
+              </g>
+
+              <circle class="pizza-svg__sparkle pizza-svg__sparkle--a" cx="60" cy="80" r="8" fill="#ffd877" />
+              <circle class="pizza-svg__sparkle pizza-svg__sparkle--b" cx="565" cy="155" r="6" fill="#ffb347" />
+              <circle class="pizza-svg__sparkle pizza-svg__sparkle--c" cx="40" cy="500" r="5" fill="#ffd877" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about__grid">
+          <div class="about__media-wrap">
+            <div class="about__media">
+              <img
+                src="photos/facade-jour.jpg"
+                alt="Devanture jaune de Tramonto, 172 rue Nationale à Cholet"
+                loading="lazy"
+                width="900"
+                height="1200"
+              />
+              <div class="about__media-tint" aria-hidden="true"></div>
+              <div class="about__card" aria-hidden="true">
+                <span class="about__chip">depuis 2018</span>
+                <span class="about__title">Forno · 450°C</span>
+                <span class="about__sub">Pâte cuite en 90 secondes</span>
+                <span class="about__flame"></span>
+              </div>
+            </div>
+            <div class="about__sticker" aria-hidden="true">
+              <span>★ ★ ★ ★ ★</span>
+              <small>Cholet, 49300</small>
+            </div>
+          </div>
+          <div class="about__copy">
+            <span class="eyebrow">— La maison</span>
+            <h2>Une pizzeria, une obsession : la pâte.</h2>
+            <p>
+              <em>Tramonto</em> — &laquo; coucher du soleil &raquo; en italien — c'est l'envie de retrouver
+              l'Italie le temps d'un repas. Notre carte fait la part belle aux classiques napolitains et
+              aux signatures du chef, avec des produits choisis chaque semaine et travaillés sur place.
+            </p>
+            <ul class="about__points">
+              <li><span aria-hidden="true">●</span> Tomates San Marzano D.O.P.</li>
+              <li><span aria-hidden="true">●</span> Mozzarella fior di latte</li>
+              <li><span aria-hidden="true">●</span> Charcuterie italienne sélectionnée</li>
+              <li><span aria-hidden="true">●</span> Pâte fermentée 48 h, légère et digeste</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu" id="menu">
+        <div class="container">
+          <header class="section-head">
+            <span class="eyebrow">— Notre carte</span>
+            <h2>De l'antipasto à la signature</h2>
+            <p>Tarifs en moyen / grand. Toutes nos pizzas sont préparées minute, à la commande.</p>
+            <div class="menu__filters" role="tablist" aria-label="Catégories du menu">
+              <button class="chip is-active" role="tab" aria-selected="true" data-filter="all">Tout</button>
+              <button class="chip" role="tab" aria-selected="false" data-filter="classiques">Classiques</button>
+              <button class="chip" role="tab" aria-selected="false" data-filter="signature">Signatures</button>
+              <button class="chip" role="tab" aria-selected="false" data-filter="pates">Pâtes</button>
+              <button class="chip" role="tab" aria-selected="false" data-filter="gratins">Gratins</button>
+              <button class="chip" role="tab" aria-selected="false" data-filter="autres">Paniozzo · Calzone</button>
+            </div>
+          </header>
+
+          <article class="menu__group" data-cat="classiques">
+            <header class="menu__head">
+              <h3>Pizzas classiques</h3>
+              <span class="menu__sizes">Moyenne · Grande</span>
+            </header>
+            <div class="menu__list">
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Margherita</h4>
+                  <span class="dish__price">9,90 € <em>/ 15,00 €</em></span>
+                </div>
+                <p class="dish__desc">Tomate pelée, mozzarella Fior di Latte, huile d'olive, basilic frais.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Bella Regina</h4>
+                  <span class="dish__price">12,50 € <em>/ 20,90 €</em></span>
+                </div>
+                <p class="dish__desc">Tomate pelée, mozzarella Fior di Latte, champignons, jambon, origan.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Pollo</h4>
+                  <span class="dish__price">13,90 € <em>/ 21,90 €</em></span>
+                </div>
+                <p class="dish__desc">Crème fraîche, mozzarella Fior di Latte, émincé de poulet, oignons, champignons, parmesan.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">4 Formaggi</h4>
+                  <span class="dish__price">13,90 € <em>/ 21,90 €</em></span>
+                </div>
+                <p class="dish__desc">Tomate pelée, mozzarella Fior di Latte, gorgonzola, brie, stracciatella di burrata, persil.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Oriental</h4>
+                  <span class="dish__price">13,90 € <em>/ 21,90 €</em></span>
+                </div>
+                <p class="dish__desc">Tomate pelée, mozzarella Fior di Latte, merguez, poivrons, oignons, olives, œuf.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Végétarienne</h4>
+                  <span class="dish__price">11,90 € <em>/ 18,90 €</em></span>
+                </div>
+                <p class="dish__desc">Tomate pelée, mozzarella Fior di Latte, champignons, poivrons, artichauts, roquette, tomate cerise.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Boursin</h4>
+                  <span class="dish__price">13,90 € <em>/ 21,90 €</em></span>
+                </div>
+                <p class="dish__desc">Crème Boursin, mozzarella Fior di Latte, viande hachée, œuf.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Mexicaine</h4>
+                  <span class="dish__price">14,90 € <em>/ 22,50 €</em></span>
+                </div>
+                <p class="dish__desc">Tomate pelée, mozzarella Fior di Latte, merguez, viande hachée, œuf.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Pepperoni</h4>
+                  <span class="dish__price">13,90 € <em>/ 21,90 €</em></span>
+                </div>
+                <p class="dish__desc">Tomate pelée, mozzarella Fior di Latte, pepperoni, gorgonzola.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Realto</h4>
+                  <span class="dish__price">14,50 € <em>/ 22,50 €</em></span>
+                </div>
+                <p class="dish__desc">Tomate pelée, mozzarella Fior di Latte, merguez, chorizo, poivrons, oignons, chèvre.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Indienne</h4>
+                  <span class="dish__price">13,90 € <em>/ 21,90 €</em></span>
+                </div>
+                <p class="dish__desc">Crème fraîche, mozzarella Fior di Latte, poulet curry, sauce curry, oignons.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">4 Saisons</h4>
+                  <span class="dish__price">13,90 € <em>/ 21,90 €</em></span>
+                </div>
+                <p class="dish__desc">Tomate pelée, mozzarella, artichauts, poivrons, olives, champignons, jambon, origan.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Thono</h4>
+                  <span class="dish__price">13,50 € <em>/ 21,50 €</em></span>
+                </div>
+                <p class="dish__desc">Tomate pelée, mozzarella Fior di Latte, thon, poivrons, câpres, oignons, olives.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu__group" data-cat="signature">
+            <header class="menu__head">
+              <h3>Pizzas signature du chef</h3>
+              <span class="menu__sizes">Format unique</span>
+            </header>
+            <div class="menu__list menu__list--featured">
+              <div class="dish dish--feat">
+                <div class="dish__top">
+                  <h4 class="dish__name">Charcuterie</h4>
+                  <span class="dish__price">13,90 €</span>
+                </div>
+                <p class="dish__desc">
+                  Tomate pelée, mozzarella Fior di Latte, chorizo, jambon, lardons.
+                </p>
+                <span class="dish__tag">Signature</span>
+              </div>
+              <div class="dish dish--feat">
+                <div class="dish__top">
+                  <h4 class="dish__name">Tramonto</h4>
+                  <span class="dish__price">15,90 €</span>
+                </div>
+                <p class="dish__desc">
+                  Sauce Beach (tomate, persillade), mozzarella Fior di Latte, crevettes royales, mix fruits de mer.
+                </p>
+                <span class="dish__tag">★ Best-seller</span>
+              </div>
+              <div class="dish dish--feat">
+                <div class="dish__top">
+                  <h4 class="dish__name">For Life</h4>
+                  <span class="dish__price">15,50 €</span>
+                </div>
+                <p class="dish__desc">
+                  Tomate pelée, mozzarella Fior di Latte, merguez, chorizo, jambon, viande hachée, sauce barbecue.
+                </p>
+                <span class="dish__tag">Signature</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu__group" data-cat="pates">
+            <header class="menu__head">
+              <h3>Les pâtes</h3>
+              <span class="menu__sizes">Penne · Spaghetti · Pâte au choix</span>
+            </header>
+            <div class="menu__list">
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Carbonara <small>(penne)</small></h4>
+                  <span class="dish__price">11,90 €</span>
+                </div>
+                <p class="dish__desc">Crème, lardons, jaunes d'œufs, parmesan.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">4 Formaggi <small>(pâte au choix)</small></h4>
+                  <span class="dish__price">12,50 €</span>
+                </div>
+                <p class="dish__desc">Brie, gorgonzola, parmesan, emmental.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Bolognaise <small>(spaghetti)</small></h4>
+                  <span class="dish__price">11,90 €</span>
+                </div>
+                <p class="dish__desc">Sauce tomate maison, viande hachée, oignons, ail, herbes.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Saumon <small>(penne)</small></h4>
+                  <span class="dish__price">13,90 €</span>
+                </div>
+                <p class="dish__desc">Crème, saumon, herbes fraîches, touche de citron.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Spaghetti fruits de mer</h4>
+                  <span class="dish__price">15,90 €</span>
+                </div>
+                <p class="dish__desc">Sauce Beach, crevettes royales, mix fruits de mer, piment, basilic frais.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Forestière <small>(penne)</small></h4>
+                  <span class="dish__price">12,90 €</span>
+                </div>
+                <p class="dish__desc">Crème, parmesan, poulet, champignons.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Curry <small>(penne)</small></h4>
+                  <span class="dish__price">12,90 €</span>
+                </div>
+                <p class="dish__desc">Sauce curry, parmesan, poulet curry.</p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Petite salade</h4>
+                  <span class="dish__price">3,00 €</span>
+                </div>
+                <p class="dish__desc">Salade verte, tomate cerise, concombre, parmesan.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu__group" data-cat="gratins">
+            <header class="menu__head">
+              <h3>Gratins au choix</h3>
+              <span class="menu__sizes">Plat unique</span>
+            </header>
+            <div class="menu__list">
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Gratin Fondant Savoyard</h4>
+                  <span class="dish__price">10,90 €</span>
+                </div>
+                <p class="dish__desc">
+                  Pommes de terre, mozzarella fondante, crème fraîche, emmental, parmesan.
+                  Viande au choix : lardons, poulet, chorizo, jambon, viande hachée ou merguez.
+                </p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Le Gratin du Chef</h4>
+                  <span class="dish__price">10,50 €</span>
+                </div>
+                <p class="dish__desc">Penne, crème maison, jambon de dinde, mozzarella, emmental gratiné.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu__group" data-cat="autres">
+            <header class="menu__head">
+              <h3>Panuozzo &amp; Calzone</h3>
+              <span class="menu__sizes">À emporter</span>
+            </header>
+            <div class="menu__list">
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Panuozzo</h4>
+                  <span class="dish__price">11,90 €</span>
+                </div>
+                <p class="dish__desc">
+                  Huile d'olive, stracciatella di burrata, tomate cerise, roquette, parmesan, sauce pesto.
+                  Viande au choix : jambon de dinde, jambon fumé, bacon, chorizo ou saucisson.
+                </p>
+              </div>
+              <div class="dish">
+                <div class="dish__top">
+                  <h4 class="dish__name">Calzone</h4>
+                  <span class="dish__price">13,00 €</span>
+                </div>
+                <p class="dish__desc">
+                  Tomate pelée, mozzarella Fior di Latte, champignons, jambon, origan, œuf au cœur.
+                  Servi avec une petite salade.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <p class="menu__note">
+            Une intolérance, une allergie ? Parlez-en à l'équipe — la carte évolue avec les arrivages.
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <header class="section-head">
+            <span class="eyebrow">— L'instant Tramonto</span>
+            <h2>Pizzas, salle, façade : un coup d'œil chez nous.</h2>
+            <p>Quelques images du four, du comptoir et de la rue Nationale au coucher du soleil.</p>
+          </header>
+
+          <div class="gallery__grid">
+            <figure class="gallery__item gallery__item--xl">
+              <img
+                src="photos/pizza-burrata-table.jpg"
+                alt="Pizza napolitaine à la burrata, roquette et tomate, posée sur la table en bois de la salle"
+                loading="lazy"
+                width="800"
+                height="600"
+              />
+              <figcaption>Burrata · roquette · San Marzano</figcaption>
+            </figure>
+
+            <figure class="gallery__item">
+              <img
+                src="photos/pizza-burratissima.jpg"
+                alt="Pizza Burratissima : burrata, roquette, copeaux de parmesan"
+                loading="lazy"
+                width="600"
+                height="800"
+              />
+              <figcaption>Burratissima</figcaption>
+            </figure>
+
+            <figure class="gallery__item">
+              <img
+                src="photos/pizza-quattro-formaggi.jpg"
+                alt="Pizza quattro formaggi avec ricotta, mozzarella, tomates cerises et basilic"
+                loading="lazy"
+                width="600"
+                height="800"
+              />
+              <figcaption>Quattro formaggi</figcaption>
+            </figure>
+
+            <figure class="gallery__item gallery__item--wide">
+              <img
+                src="photos/facade-nuit-large.jpg"
+                alt="Façade de Tramonto illuminée le soir, vue panoramique sur la salle"
+                loading="lazy"
+                width="1200"
+                height="700"
+              />
+              <figcaption>172 rue Nationale, Cholet</figcaption>
+            </figure>
+
+            <figure class="gallery__item">
+              <img
+                src="photos/pizza-thon-de-passion.jpg"
+                alt="Pizza Thon de Passion : thon, olives, tomates, poivrons jaunes"
+                loading="lazy"
+                width="600"
+                height="800"
+              />
+              <figcaption>Thon de Passion</figcaption>
+            </figure>
+
+            <figure class="gallery__item">
+              <img
+                src="photos/pizza-panamera.jpg"
+                alt="Pizza Panamera aux crevettes, saumon, basilic et tranches de citron vert"
+                loading="lazy"
+                width="600"
+                height="800"
+              />
+              <figcaption>Panamera</figcaption>
+            </figure>
+
+            <figure class="gallery__item">
+              <img
+                src="photos/salle-banquette.jpg"
+                alt="Plat servi en salle sur la banquette verte de la pizzeria"
+                loading="lazy"
+                width="600"
+                height="800"
+              />
+              <figcaption>En salle</figcaption>
+            </figure>
+
+            <figure class="gallery__item">
+              <img
+                src="photos/tiramisu-jars.jpg"
+                alt="Tiramisus italiens en pots, scellés au couvercle doré"
+                loading="lazy"
+                width="600"
+                height="600"
+              />
+              <figcaption>Tiramisu maison</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="offers" id="offers">
+        <div class="container">
+          <header class="section-head section-head--light">
+            <span class="eyebrow">— Bons plans</span>
+            <h2>Les offres Tramonto</h2>
+            <p>Deux formules à emporter, valables du dimanche au jeudi.</p>
+          </header>
+
+          <div class="offers__grid">
+            <article class="offer">
+              <div class="offer__badge">Dim. → Jeudi</div>
+              <h3>Offre Spéciale Pizzas</h3>
+              <p class="offer__desc">
+                Deux façons d'en profiter : la deuxième pizza à moitié prix, ou la troisième
+                offerte pour deux achetées.
+              </p>
+              <ul class="offer__list">
+                <li>1 pizza achetée = la 2<sup>e</sup> à −50 %</li>
+                <li>2 pizzas achetées = 1 offerte</li>
+                <li>À emporter uniquement</li>
+              </ul>
+              <a class="btn btn--primary btn--block" href="tel:+33244098210">Commander l'offre</a>
+            </article>
+
+            <article class="offer offer--dark">
+              <div class="offer__badge">Famille</div>
+              <h3>Offre Menu Famille</h3>
+              <p class="offer__desc">
+                Deux grandes pizzas et la boisson offerte pour partager le repas
+                en toute simplicité.
+              </p>
+              <ul class="offer__list">
+                <li>2 grandes pizzas au choix</li>
+                <li>1 bouteille offerte</li>
+                <li>À emporter uniquement · du dimanche au jeudi</li>
+              </ul>
+              <a class="btn btn--ghost btn--block" href="tel:+33244098210">Commander l'offre</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="visit" id="visit">
+        <div class="container visit__grid">
+          <div class="visit__copy">
+            <span class="eyebrow">— Nous trouver</span>
+            <h2>Au cœur de Cholet,<br />sur la rue Nationale.</h2>
+            <p>
+              Poussez la porte du 172, installez-vous au comptoir ou commandez en livraison.
+              Livraison <strong>gratuite</strong> de 19h à 23h dans un rayon de 5&nbsp;km autour de la pizzeria.
+            </p>
+
+            <ul class="visit__info">
+              <li>
+                <span class="visit__icn" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 5.5 8 12 8 12s8-6.5 8-12a8 8 0 0 0-8-8Zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" fill="currentColor"/></svg>
+                </span>
+                <div>
+                  <strong>Tramonto</strong>
+                  <span>172 rue Nationale, 49300 Cholet</span>
+                </div>
+              </li>
+              <li>
+                <span class="visit__icn" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1L6.6 10.8Z" fill="currentColor"/></svg>
+                </span>
+                <div>
+                  <strong>Réservation &amp; commande</strong>
+                  <a href="tel:+33244098210">02 44 09 82 10</a>
+                </div>
+              </li>
+              <li>
+                <span class="visit__icn" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 8v5l4 2 .8-1.4-3.3-1.9V8Zm0-6a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8Z" fill="currentColor"/></svg>
+                </span>
+                <div>
+                  <strong>Horaires</strong>
+                  <span>7 j / 7 · 11h – 15h &nbsp;&middot;&nbsp; 18h – minuit</span>
+                </div>
+              </li>
+              <li>
+                <span class="visit__icn" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M3 7h13l-1.5-2H3v2Zm0 4h18v8H3Zm14 4a2 2 0 1 0-2-2 2 2 0 0 0 2 2Z" fill="currentColor"/></svg>
+                </span>
+                <div>
+                  <strong>Livraison</strong>
+                  <span>Gratuite de 19h à 23h · rayon 5 km</span>
+                  <span>Aussi disponible sur Uber Eats</span>
+                </div>
+              </li>
+              <li>
+                <span class="visit__icn" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.4 9.5 8 10 4.6-.5 8-5 8-10V6l-8-4Zm0 6 5 2.5V12c0 3.6-2.4 7-5 7.7-2.6-.7-5-4.1-5-7.7v-3.5L12 8Z" fill="currentColor"/></svg>
+                </span>
+                <div>
+                  <strong>100 % halal</strong>
+                  <span>Toutes nos viandes sont certifiées halal.</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="visit__cta">
+              <a class="btn btn--primary" href="tel:+33244098210">Appeler maintenant</a>
+              <a
+                class="btn btn--ubereats"
+                href="https://www.ubereats.com/fr-en/store/tramonto/LcexGbM0WCK-EyssemjGjQ"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <span class="ue-wordmark"><strong>Uber</strong> Eats</span>
+                <span class="ue-cta">Commander</span>
+              </a>
+              <a
+                class="btn btn--ghost"
+                href="https://www.google.com/maps/search/?api=1&query=Tramonto+172+rue+Nationale+Cholet"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Itinéraire
+              </a>
+            </div>
+          </div>
+
+          <div class="visit__map">
+            <iframe
+              title="Plan d'accès Tramonto, 172 rue Nationale, Cholet"
+              src="https://www.google.com/maps?q=172%20rue%20Nationale%2049300%20Cholet&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <span class="brand">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none">
+                <circle cx="16" cy="20" r="10" fill="url(#sun2)" />
+                <path d="M2 22h28" stroke="#f5e6d3" stroke-width="2" stroke-linecap="round" />
+                <defs>
+                  <linearGradient id="sun2" x1="6" y1="10" x2="26" y2="30" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#ffb347" />
+                    <stop offset="0.55" stop-color="#ff6b3d" />
+                    <stop offset="1" stop-color="#a01818" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <span class="brand__name">
+              Tramonto
+              <small>La Napolitaine de Cholet</small>
+            </span>
+          </span>
+          <p>Pizzas napolitaines, pâtes et gratins faits maison à Cholet.</p>
+        </div>
+
+        <div>
+          <h4>Adresse</h4>
+          <p>
+            172 rue Nationale<br />
+            49300 Cholet
+          </p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>
+            <a href="tel:+33244098210">02 44 09 82 10</a><br />
+            <a href="mailto:contact@tramonto-cholet.fr">contact@tramonto-cholet.fr</a>
+          </p>
+        </div>
+        <div>
+          <h4>Horaires</h4>
+          <p>
+            Tous les jours<br />
+            11h – 15h · 18h – minuit
+          </p>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <small>© <span id="year"></span> Tramonto · Tous droits réservés</small>
+        <small>Site conçu avec passion à Cholet</small>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
