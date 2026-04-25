@@ -600,6 +600,9 @@ button {
   font-size: 1.08rem;
   color: var(--c-ink-soft);
   max-width: 540px;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
   margin: 0 0 32px;
 }
 
@@ -919,6 +922,9 @@ button {
   color: var(--c-ink-soft);
   font-size: 1.04rem;
   margin: 0 0 26px;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 .about__copy em {
@@ -1119,6 +1125,9 @@ button {
   font-size: 0.94rem;
   color: var(--c-ink-soft);
   line-height: 1.55;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 .dish--feat {
@@ -1243,6 +1252,9 @@ button {
   margin: 0 0 20px;
   color: rgba(246, 236, 217, 0.8);
   font-size: 1rem;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 .offer--dark .offer__desc {
@@ -1316,6 +1328,9 @@ button {
   color: var(--c-ink-soft);
   font-size: 1.04rem;
   margin: 0 0 28px;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
   max-width: 480px;
 }
 
@@ -1879,6 +1894,9 @@ button {
   font-size: 1.04rem;
   line-height: 1.55;
   color: var(--c-ink);
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 .review__author {
