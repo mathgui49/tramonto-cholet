@@ -405,6 +405,40 @@ export function PreviewBridge() {
       return new Set(out).size === out.length ? out : null;
     };
 
+    /**
+     * Remet le DOM dans l'ordre des ancres reçues.
+     *
+     * L'éditeur envoie le contenu à chaque frappe, et le pont sait déjà
+     * répercuter un texte ou une image. L'ORDRE, lui, ne se voyait pas : monter
+     * une photo dans le formulaire ne bougeait rien à l'écran tant qu'on
+     * n'avait pas publié, alors que c'est précisément le genre de geste qu'on
+     * veut juger à l'oeil.
+     *
+     * Pas de nouveau message : `listes` arrive déjà à chaque envoi, dans
+     * l'ordre du contenu. Il suffit de faire correspondre le DOM. Un même
+     * mécanisme sert donc les boutons du formulaire, l'annulation, et tout ce
+     * qui changera l'ordre demain.
+     */
+    const alignerLordreDesListes = () => {
+      for (const liste of listes) {
+        const voulu = elementsDeListe(liste);
+        if (!voulu || voulu.length < 2) continue;
+        const parent = voulu[0].parentElement;
+        // Des éléments répartis sous plusieurs parents (une grille coupée en
+        // colonnes) ne se réordonnent pas par simple insertion : on renonce.
+        if (!parent || !voulu.every((el) => el.parentElement === parent)) continue;
+
+        const actuel = Array.from(parent.children).filter((c) => voulu.includes(c as HTMLElement));
+        if (actuel.every((el, i) => el === voulu[i])) continue;
+
+        // Réinsère le groupe à la place qu'il occupait, dans le bon ordre. Le
+        // repère est pris AVANT de déplacer quoi que ce soit, sinon il bouge
+        // avec les éléments qu'on déplace.
+        const repere = actuel[actuel.length - 1].nextSibling;
+        for (const el of voulu) parent.insertBefore(el, repere);
+      }
+    };
+
     /** La liste et la position d'un élément survolé, s'il appartient à une liste. */
     const listeSous = (cible: Element | null): { liste: ListeDesignable; depuis: number; elements: HTMLElement[] } | null => {
       if (!cible) return null;
@@ -592,6 +626,9 @@ export function PreviewBridge() {
       }
       if (data.images && typeof data.images === 'object') appliquerImages(data.images);
       if (data.texts && typeof data.texts === 'object') appliquerTextes(data.texts, editable);
+      // APRÈS les textes : les ancres décrivent le contenu du brouillon, donc
+      // elles ne retrouvent leurs éléments qu'une fois le DOM à jour.
+      alignerLordreDesListes();
       armerListes();
       // Après application, pas avant : le brouillon a pu changer un titre, et
       // contrôler la structure d'avant reviendrait à contrôler autre chose.
