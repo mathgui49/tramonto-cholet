@@ -6,7 +6,7 @@ const root = resolve(import.meta.dirname, "..");
 
 // ---------- OG image: 1200x630 ----------
 async function makeOg() {
-  const bg = await sharp(resolve(root, "photos/pizza-burratissima.jpg"))
+  const bg = await sharp(resolve(root, "public/photos/pizza-burratissima.jpg"))
     .resize(1200, 630, { fit: "cover", position: "centre" })
     .modulate({ saturation: 1.1, brightness: 0.92 })
     .toBuffer();
@@ -53,7 +53,7 @@ async function makeOg() {
     .jpeg({ quality: 86, progressive: true, mozjpeg: true })
     .toBuffer();
 
-  await writeFile(resolve(root, "og.jpg"), out);
+  await writeFile(resolve(root, "public/og.jpg"), out);
   console.log("og.jpg", out.length, "bytes");
 }
 
@@ -82,7 +82,7 @@ async function makeIcons() {
 
   for (const { name, size } of sizes) {
     const buf = await sharp(Buffer.from(svg)).resize(size, size).png().toBuffer();
-    await writeFile(resolve(root, name), buf);
+    await writeFile(resolve(root, "public", name), buf);
     console.log(name, buf.length);
   }
 
@@ -100,14 +100,14 @@ async function makeIcons() {
     <path d="M16 64h68" stroke="#f6ecd9" stroke-width="4" stroke-linecap="round"/>
   </svg>`;
   const maskBuf = await sharp(Buffer.from(maskableSvg)).resize(512, 512).png().toBuffer();
-  await writeFile(resolve(root, "icon-maskable-512.png"), maskBuf);
+  await writeFile(resolve(root, "public/icon-maskable-512.png"), maskBuf);
   console.log("icon-maskable-512.png", maskBuf.length);
 }
 
 // ---------- WebP versions of every photo ----------
 async function makeWebp() {
   const { readdir } = await import("node:fs/promises");
-  const dir = resolve(root, "photos");
+  const dir = resolve(root, "public/photos");
   const files = (await readdir(dir)).filter((f) => /\.(jpe?g|png)$/i.test(f));
   for (const f of files) {
     const inPath = resolve(dir, f);

@@ -1,0 +1,664 @@
+{
+  "version": "1",
+  "brand": {
+    "primary": "#e85a2a"
+  },
+  "business": {
+    "name": "Tramonto",
+    "baseline": "La Napolitaine de Cholet",
+    "nomComplet": "Tramonto · La Napolitaine de Cholet",
+    "telephone": "02 44 09 82 10",
+    "telephoneLien": "tel:+33244098210",
+    "email": "contact@tramonto-cholet.fr",
+    "adresse": "172 rue Nationale",
+    "codePostal": "49300",
+    "ville": "Cholet",
+    "region": "Pays de la Loire",
+    "pays": "FR",
+    "latitude": 47.0608,
+    "longitude": -0.8788,
+    "gammeDePrix": "€€",
+    "cuisines": [
+      "Italian",
+      "Pizza",
+      "Napolitaine"
+    ],
+    "ubereats": "https://www.ubereats.com/fr-en/store/tramonto/LcexGbM0WCK-EyssemjGjQ",
+    "itineraire": "https://www.google.com/maps/search/?api=1&query=Tramonto+172+rue+Nationale+Cholet",
+    "planIntegre": "https://www.google.com/maps?q=172%20rue%20Nationale%2049300%20Cholet&output=embed",
+    "planTitre": "Plan d'accès Tramonto, 172 rue Nationale, Cholet",
+    "horaires": [
+      {
+        "ouverture": "11:00",
+        "fermeture": "15:00"
+      },
+      {
+        "ouverture": "18:00",
+        "fermeture": "00:00"
+      }
+    ]
+  },
+  "seo": {
+    "title": "Tramonto · Pizzeria napolitaine à Cholet · Halal · Livraison gratuite",
+    "description": "Pizzeria napolitaine à Cholet : pizzas au feu de bois, pâtes fraîches, gratins maison. 100 % halal. Livraison gratuite 19h–23h dans un rayon de 5 km. 172 rue Nationale.",
+    "keywords": [
+      "pizzeria Cholet",
+      "pizza napolitaine Cholet",
+      "livraison pizza Cholet",
+      "halal Cholet",
+      "restaurant italien Cholet",
+      "Tramonto"
+    ],
+    "url": "https://tramonto-cholet.vercel.app",
+    "ogTitle": "Tramonto · Pizzeria napolitaine à Cholet",
+    "ogDescription": "Pizzas napolitaines, pâtes, gratins · 100 % halal. Livraison gratuite 19h–23h dans un rayon de 5 km. 172 rue Nationale, Cholet.",
+    "ogImage": "/og.jpg",
+    "ogImageAlt": "Pizza burratissima de Tramonto, la pizzeria napolitaine de Cholet",
+    "twitterTitle": "Tramonto · Pizzeria napolitaine à Cholet",
+    "twitterDescription": "Pizzas napolitaines, pâtes, gratins · 100 % halal. Livraison gratuite 19h–23h. 172 rue Nationale, Cholet.",
+    "twitterImageAlt": "Pizza burratissima de Tramonto, Cholet",
+    "descriptionStructuree": "Pizzeria napolitaine à Cholet : pizzas au feu de bois, pâtes fraîches, gratins maison. 100 % halal. Livraison gratuite 19h–23h dans un rayon de 5 km.",
+    "themeColorClair": "#f6ecd9",
+    "themeColorSombre": "#0e0805"
+  },
+  "nav": {
+    "ariaLabel": "Navigation principale",
+    "accueilAria": "Tramonto, accueil",
+    "lienEvitement": "Aller au menu",
+    "ouvrirMenu": "Ouvrir le menu",
+    "themeAria": "Basculer le thème sombre",
+    "themeTitre": "Thème sombre / clair",
+    "items": [
+      {
+        "label": "La maison",
+        "href": "#about"
+      },
+      {
+        "label": "La carte",
+        "href": "#menu"
+      },
+      {
+        "label": "Galerie",
+        "href": "#gallery"
+      },
+      {
+        "label": "Avis",
+        "href": "#reviews"
+      },
+      {
+        "label": "Offres",
+        "href": "#offers"
+      },
+      {
+        "label": "Nous trouver",
+        "href": "#visit"
+      }
+    ]
+  },
+  "hero": {
+    "eyebrow": "— La pizzeria napolitaine de Cholet",
+    "title": [
+      "Le goût d'Italie,",
+      "au coucher du soleil."
+    ],
+    "intro": "Pâte fermentée 48 h, mozzarella fior di latte, tomates San Marzano. À déguster sur place, à emporter ou livrées chaudes chez vous.",
+    "cta": {
+      "label": "Voir la carte",
+      "href": "#menu"
+    },
+    "ubereatsLabel": "Commander",
+    "image": {
+      "src": "/photos/hero-pizza.jpg",
+      "webp": "/photos/hero-pizza.webp",
+      "alt": "Pizza burrata Tramonto : burrata crémeuse, basilic, roquette et tomate San Marzano sur pâte napolitaine",
+      "largeur": 1100,
+      "hauteur": 1100
+    },
+    "badge": {
+      "title": "48 h",
+      "legende": "fermentation"
+    },
+    "strip": [
+      {
+        "title": "Halal",
+        "description": "100 % de la carte"
+      },
+      {
+        "title": "19 h — 23 h",
+        "description": "livraison gratuite · 5 km"
+      },
+      {
+        "title": "Uber Eats",
+        "description": "commande en ligne"
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "— La maison",
+    "title": "Une pizzeria, une obsession : la pâte.",
+    "emphase": "Tramonto",
+    "texte": "— « coucher du soleil » en italien — c'est l'envie de retrouver l'Italie le temps d'un repas. Notre carte fait la part belle aux classiques napolitains et aux signatures du chef, avec des produits choisis chaque semaine et travaillés sur place.",
+    "image": {
+      "src": "/photos/facade-jour.jpg",
+      "webp": "/photos/facade-jour.webp",
+      "alt": "Devanture jaune de Tramonto, 172 rue Nationale à Cholet",
+      "largeur": 900,
+      "hauteur": 1200
+    },
+    "carte": {
+      "chapeau": "depuis 2018",
+      "title": "Forno · 450°C",
+      "description": "Pâte cuite en 90 secondes"
+    },
+    "points": [
+      "Tomates San Marzano D.O.P.",
+      "Mozzarella fior di latte",
+      "Charcuterie italienne sélectionnée",
+      "Pâte fermentée 48 h, légère et digeste"
+    ]
+  },
+  "menu": {
+    "eyebrow": "— Notre carte",
+    "title": "De l'antipasto à la signature",
+    "intro": "Tarifs en moyen / grand. Toutes nos pizzas sont préparées minute, à la commande.",
+    "filtresAria": "Catégories du menu",
+    "note": "Une intolérance, une allergie ? Parlez-en à l'équipe — la carte évolue avec les arrivages.",
+    "filtres": [
+      {
+        "label": "Tout",
+        "categorie": "all"
+      },
+      {
+        "label": "Classiques",
+        "categorie": "classiques"
+      },
+      {
+        "label": "Signatures",
+        "categorie": "signature"
+      },
+      {
+        "label": "Pâtes",
+        "categorie": "pates"
+      },
+      {
+        "label": "Gratins",
+        "categorie": "gratins"
+      },
+      {
+        "label": "Paniozzo · Calzone",
+        "categorie": "autres"
+      }
+    ],
+    "groupes": [
+      {
+        "title": "Pizzas classiques",
+        "categorie": "classiques",
+        "formats": "Moyenne · Grande",
+        "misEnAvant": false,
+        "items": [
+          {
+            "name": "Margherita",
+            "prix": "9,90 €",
+            "prixGrande": "/ 15,00 €",
+            "description": "Tomate pelée, mozzarella Fior di Latte, huile d'olive, basilic frais."
+          },
+          {
+            "name": "Bella Regina",
+            "prix": "12,50 €",
+            "prixGrande": "/ 20,90 €",
+            "description": "Tomate pelée, mozzarella Fior di Latte, champignons, jambon, origan."
+          },
+          {
+            "name": "Pollo",
+            "prix": "13,90 €",
+            "prixGrande": "/ 21,90 €",
+            "description": "Crème fraîche, mozzarella Fior di Latte, émincé de poulet, oignons, champignons, parmesan."
+          },
+          {
+            "name": "4 Formaggi",
+            "prix": "13,90 €",
+            "prixGrande": "/ 21,90 €",
+            "description": "Tomate pelée, mozzarella Fior di Latte, gorgonzola, brie, stracciatella di burrata, persil."
+          },
+          {
+            "name": "Oriental",
+            "prix": "13,90 €",
+            "prixGrande": "/ 21,90 €",
+            "description": "Tomate pelée, mozzarella Fior di Latte, merguez, poivrons, oignons, olives, œuf."
+          },
+          {
+            "name": "Végétarienne",
+            "prix": "11,90 €",
+            "prixGrande": "/ 18,90 €",
+            "description": "Tomate pelée, mozzarella Fior di Latte, champignons, poivrons, artichauts, roquette, tomate cerise.",
+            "vegetarien": true
+          },
+          {
+            "name": "Boursin",
+            "prix": "13,90 €",
+            "prixGrande": "/ 21,90 €",
+            "description": "Crème Boursin, mozzarella Fior di Latte, viande hachée, œuf."
+          },
+          {
+            "name": "Mexicaine",
+            "prix": "14,90 €",
+            "prixGrande": "/ 22,50 €",
+            "description": "Tomate pelée, mozzarella Fior di Latte, merguez, viande hachée, œuf."
+          },
+          {
+            "name": "Pepperoni",
+            "prix": "13,90 €",
+            "prixGrande": "/ 21,90 €",
+            "description": "Tomate pelée, mozzarella Fior di Latte, pepperoni, gorgonzola."
+          },
+          {
+            "name": "Realto",
+            "prix": "14,50 €",
+            "prixGrande": "/ 22,50 €",
+            "description": "Tomate pelée, mozzarella Fior di Latte, merguez, chorizo, poivrons, oignons, chèvre."
+          },
+          {
+            "name": "Indienne",
+            "prix": "13,90 €",
+            "prixGrande": "/ 21,90 €",
+            "description": "Crème fraîche, mozzarella Fior di Latte, poulet curry, sauce curry, oignons."
+          },
+          {
+            "name": "4 Saisons",
+            "prix": "13,90 €",
+            "prixGrande": "/ 21,90 €",
+            "description": "Tomate pelée, mozzarella, artichauts, poivrons, olives, champignons, jambon, origan."
+          },
+          {
+            "name": "Thono",
+            "prix": "13,50 €",
+            "prixGrande": "/ 21,50 €",
+            "description": "Tomate pelée, mozzarella Fior di Latte, thon, poivrons, câpres, oignons, olives."
+          }
+        ]
+      },
+      {
+        "title": "Pizzas signature du chef",
+        "categorie": "signature",
+        "formats": "Format unique",
+        "misEnAvant": true,
+        "items": [
+          {
+            "name": "Charcuterie",
+            "prix": "13,90 €",
+            "description": "Tomate pelée, mozzarella Fior di Latte, chorizo, jambon, lardons.",
+            "etiquette": "Signature"
+          },
+          {
+            "name": "Tramonto",
+            "prix": "15,90 €",
+            "description": "Sauce Beach (tomate, persillade), mozzarella Fior di Latte, crevettes royales, mix fruits de mer.",
+            "etiquette": "★ Best-seller"
+          },
+          {
+            "name": "For Life",
+            "prix": "15,50 €",
+            "description": "Tomate pelée, mozzarella Fior di Latte, merguez, chorizo, jambon, viande hachée, sauce barbecue.",
+            "etiquette": "Signature"
+          }
+        ]
+      },
+      {
+        "title": "Les pâtes",
+        "categorie": "pates",
+        "formats": "Penne · Spaghetti · Pâte au choix",
+        "misEnAvant": false,
+        "items": [
+          {
+            "name": "Carbonara",
+            "precision": "(penne)",
+            "prix": "11,90 €",
+            "description": "Crème, lardons, jaunes d'œufs, parmesan."
+          },
+          {
+            "name": "4 Formaggi",
+            "precision": "(pâte au choix)",
+            "prix": "12,50 €",
+            "description": "Brie, gorgonzola, parmesan, emmental.",
+            "vegetarien": true
+          },
+          {
+            "name": "Bolognaise",
+            "precision": "(spaghetti)",
+            "prix": "11,90 €",
+            "description": "Sauce tomate maison, viande hachée, oignons, ail, herbes."
+          },
+          {
+            "name": "Saumon",
+            "precision": "(penne)",
+            "prix": "13,90 €",
+            "description": "Crème, saumon, herbes fraîches, touche de citron."
+          },
+          {
+            "name": "Spaghetti fruits de mer",
+            "prix": "15,90 €",
+            "description": "Sauce Beach, crevettes royales, mix fruits de mer, piment, basilic frais."
+          },
+          {
+            "name": "Forestière",
+            "precision": "(penne)",
+            "prix": "12,90 €",
+            "description": "Crème, parmesan, poulet, champignons."
+          },
+          {
+            "name": "Curry",
+            "precision": "(penne)",
+            "prix": "12,90 €",
+            "description": "Sauce curry, parmesan, poulet curry."
+          },
+          {
+            "name": "Petite salade",
+            "prix": "3,00 €",
+            "description": "Salade verte, tomate cerise, concombre, parmesan.",
+            "vegetarien": true
+          }
+        ]
+      },
+      {
+        "title": "Gratins au choix",
+        "categorie": "gratins",
+        "formats": "Plat unique",
+        "misEnAvant": false,
+        "items": [
+          {
+            "name": "Gratin Fondant Savoyard",
+            "prix": "10,90 €",
+            "description": "Pommes de terre, mozzarella fondante, crème fraîche, emmental, parmesan. Viande au choix : lardons, poulet, chorizo, jambon, viande hachée ou merguez."
+          },
+          {
+            "name": "Le Gratin du Chef",
+            "prix": "10,50 €",
+            "description": "Penne, crème maison, jambon de dinde, mozzarella, emmental gratiné."
+          }
+        ]
+      },
+      {
+        "title": "Panuozzo & Calzone",
+        "categorie": "autres",
+        "formats": "À emporter",
+        "misEnAvant": false,
+        "items": [
+          {
+            "name": "Panuozzo",
+            "prix": "11,90 €",
+            "description": "Huile d'olive, stracciatella di burrata, tomate cerise, roquette, parmesan, sauce pesto. Viande au choix : jambon de dinde, jambon fumé, bacon, chorizo ou saucisson."
+          },
+          {
+            "name": "Calzone",
+            "prix": "13,00 €",
+            "description": "Tomate pelée, mozzarella Fior di Latte, champignons, jambon, origan, œuf au cœur. Servi avec une petite salade."
+          }
+        ]
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "— L'instant Tramonto",
+    "title": "Pizzas, salle, façade : un coup d'œil chez nous.",
+    "intro": "Quelques images du four, du comptoir et de la rue Nationale au coucher du soleil.",
+    "ariaLabel": "Galerie photo Tramonto",
+    "agrandir": "Agrandir la photo",
+    "fermer": "Fermer la galerie",
+    "precedente": "Photo précédente",
+    "suivante": "Photo suivante",
+    "items": [
+      {
+        "src": "/photos/pizza-burrata-table.jpg",
+        "webp": "/photos/pizza-burrata-table.webp",
+        "alt": "Pizza napolitaine à la burrata, roquette et tomate, posée sur la table en bois de la salle",
+        "legende": "Burrata · roquette · San Marzano",
+        "largeur": 800,
+        "hauteur": 600,
+        "format": "xl"
+      },
+      {
+        "src": "/photos/pizza-burratissima.jpg",
+        "webp": "/photos/pizza-burratissima.webp",
+        "alt": "Pizza Burratissima : burrata, roquette, copeaux de parmesan",
+        "legende": "Burratissima",
+        "largeur": 600,
+        "hauteur": 800,
+        "format": "normal"
+      },
+      {
+        "src": "/photos/pizza-quattro-formaggi.jpg",
+        "webp": "/photos/pizza-quattro-formaggi.webp",
+        "alt": "Pizza quattro formaggi avec ricotta, mozzarella, tomates cerises et basilic",
+        "legende": "Quattro formaggi",
+        "largeur": 600,
+        "hauteur": 800,
+        "format": "normal"
+      },
+      {
+        "src": "/photos/facade-nuit-large.jpg",
+        "webp": "/photos/facade-nuit-large.webp",
+        "alt": "Façade de Tramonto illuminée le soir, vue panoramique sur la salle",
+        "legende": "172 rue Nationale, Cholet",
+        "largeur": 1200,
+        "hauteur": 700,
+        "format": "wide"
+      },
+      {
+        "src": "/photos/pizza-thon-de-passion.jpg",
+        "webp": "/photos/pizza-thon-de-passion.webp",
+        "alt": "Pizza Thon de Passion : thon, olives, tomates, poivrons jaunes",
+        "legende": "Thon de Passion",
+        "largeur": 600,
+        "hauteur": 800,
+        "format": "normal"
+      },
+      {
+        "src": "/photos/pizza-panamera.jpg",
+        "webp": "/photos/pizza-panamera.webp",
+        "alt": "Pizza Panamera aux crevettes, saumon, basilic et tranches de citron vert",
+        "legende": "Panamera",
+        "largeur": 600,
+        "hauteur": 800,
+        "format": "normal"
+      },
+      {
+        "src": "/photos/salle-banquette.jpg",
+        "webp": "/photos/salle-banquette.webp",
+        "alt": "Plat servi en salle sur la banquette verte de la pizzeria",
+        "legende": "En salle",
+        "largeur": 600,
+        "hauteur": 800,
+        "format": "normal"
+      },
+      {
+        "src": "/photos/tiramisu-jars.jpg",
+        "webp": "/photos/tiramisu-jars.webp",
+        "alt": "Tiramisus italiens en pots, scellés au couvercle doré",
+        "legende": "Tiramisu maison",
+        "largeur": 600,
+        "hauteur": 600,
+        "format": "normal"
+      }
+    ]
+  },
+  "reviews": {
+    "eyebrow": "— Vos avis",
+    "title": "Ce que disent nos clients sur Google",
+    "noteAria": "Note moyenne 4,6 sur 5 sur Google",
+    "etoiles": "★★★★★",
+    "note": "4,6 / 5",
+    "sousTitre": "avis Google · Tramonto Cholet",
+    "cta": {
+      "label": "Lire tous les avis sur Google"
+    },
+    "items": [
+      {
+        "name": "Kate R.",
+        "texte": "Je ne connaissais pas cette pizzeria à aujourd'hui. Je viens de prendre une pizza chèvre miel à emporter que je trouve vraiment très bonne. Je reviendrai une prochaine fois.",
+        "source": "Avis Google",
+        "etoiles": "★★★★★",
+        "etoilesAria": "5 sur 5"
+      },
+      {
+        "name": "Cynthia FR",
+        "texte": "Première dans ce restaurant après une soirée cinéma. Serveur au top et les pizza une tuerie, la pâte est juste succulente, très rare d'en trouver des comme ça, la garniture est fraîche et très bonne. Le service est impeccable et le lieu est très propre. Je recommande.",
+        "source": "Avis Google",
+        "etoiles": "★★★★★",
+        "etoilesAria": "5 sur 5"
+      },
+      {
+        "name": "Vincent Boileau",
+        "texte": "Les plats sont une découverte, avec des goûts surprenants ! La pizza c'est une régale ! Une équipe très souriante, qui effectue un très bon travail. Très très bon restaurant.",
+        "source": "Avis Google",
+        "etoiles": "★★★★★",
+        "etoilesAria": "5 sur 5"
+      }
+    ]
+  },
+  "offers": {
+    "eyebrow": "— Bons plans",
+    "title": "Les offres Tramonto",
+    "intro": "Deux formules à emporter, valables du dimanche au jeudi.",
+    "items": [
+      {
+        "title": "Offre Spéciale Pizzas",
+        "chapeau": "Dim. → Jeudi",
+        "description": "Deux façons d'en profiter : la deuxième pizza à moitié prix, ou la troisième offerte pour deux achetées.",
+        "sombre": false,
+        "ctaLabel": "Commander l'offre",
+        "points": [
+          "1 pizza achetée = la 2e à −50 %",
+          "2 pizzas achetées = 1 offerte",
+          "À emporter uniquement"
+        ]
+      },
+      {
+        "title": "Offre Menu Famille",
+        "chapeau": "Famille",
+        "description": "Deux grandes pizzas et la boisson offerte pour partager le repas en toute simplicité.",
+        "sombre": true,
+        "ctaLabel": "Commander l'offre",
+        "points": [
+          "2 grandes pizzas au choix",
+          "1 bouteille offerte",
+          "À emporter uniquement · du dimanche au jeudi"
+        ]
+      }
+    ]
+  },
+  "visit": {
+    "eyebrow": "— Nous trouver",
+    "title": [
+      "Au cœur de Cholet,",
+      "sur la rue Nationale."
+    ],
+    "intro": "Poussez la porte du 172, installez-vous au comptoir ou commandez en livraison. Livraison",
+    "introFort": "gratuite",
+    "introSuite": "de 19h à 23h dans un rayon de 5 km autour de la pizzeria.",
+    "ctaAppel": "Appeler maintenant",
+    "ctaUbereats": "Commander",
+    "ctaItineraire": "Itinéraire",
+    "info": [
+      {
+        "title": "Tramonto",
+        "icone": "lieu",
+        "lignes": [
+          "172 rue Nationale, 49300 Cholet"
+        ]
+      },
+      {
+        "title": "Réservation & commande",
+        "icone": "telephone",
+        "lignes": [
+          "02 44 09 82 10"
+        ],
+        "lienTelephone": true
+      },
+      {
+        "title": "Horaires",
+        "icone": "horloge",
+        "lignes": [
+          "7 j / 7 · 11h – 15h  ·  18h – minuit"
+        ]
+      },
+      {
+        "title": "Livraison",
+        "icone": "livraison",
+        "lignes": [
+          "Gratuite de 19h à 23h · rayon 5 km",
+          "Aussi disponible sur Uber Eats"
+        ]
+      },
+      {
+        "title": "100 % halal",
+        "icone": "bouclier",
+        "lignes": [
+          "Toutes nos viandes sont certifiées halal."
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "description": "Pizzas napolitaines, pâtes et gratins faits maison à Cholet.",
+    "colonnes": [
+      {
+        "title": "Adresse",
+        "lignes": [
+          {
+            "texte": "172 rue Nationale"
+          },
+          {
+            "texte": "49300 Cholet"
+          }
+        ]
+      },
+      {
+        "title": "Contact",
+        "lignes": [
+          {
+            "texte": "02 44 09 82 10",
+            "href": "tel:+33244098210"
+          },
+          {
+            "texte": "contact@tramonto-cholet.fr",
+            "href": "mailto:contact@tramonto-cholet.fr"
+          }
+        ]
+      },
+      {
+        "title": "Horaires",
+        "lignes": [
+          {
+            "texte": "Tous les jours"
+          },
+          {
+            "texte": "11h – 15h · 18h – minuit"
+          }
+        ]
+      }
+    ],
+    "mentions": "Tramonto · Tous droits réservés",
+    "signature": "Site conçu avec passion à Cholet"
+  },
+  "barreMobile": {
+    "ariaLabel": "Commander rapidement",
+    "appelLabel": "Appeler",
+    "appelAria": "Appeler Tramonto au 02 44 09 82 10",
+    "commandeLabel": "Commander",
+    "commandeAria": "Commander sur Uber Eats"
+  },
+  "pageIntrouvable": {
+    "title": "Page introuvable · Tramonto",
+    "code": "404",
+    "titre": "Cette page s'est égarée dans le four.",
+    "texte": "Pas de panique — la pâte est toujours en train de lever. Retour à la maison ou direction la carte ?",
+    "ctaAccueil": {
+      "label": "Retour à l'accueil",
+      "href": "/"
+    },
+    "ctaCarte": {
+      "label": "Voir la carte",
+      "href": "/#menu"
+    }
+  }
+}

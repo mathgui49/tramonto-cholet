@@ -1,7 +1,12 @@
-photos/_source/
+node_modules
+.next
+out
+.env*
+!.env.example
 .DS_Store
-Thumbs.db
 .vercel
-node_modules/
-package-lock.json
-package.json
+Thumbs.db
+public/photos/_source/
+
+# Fichiers générés
+*.tsbuildinfo
