@@ -1996,10 +1996,18 @@ button {
   border-color: var(--c-ink-soft);
 }
 
+/* Six avis au lieu de trois : sur tablette, deux colonnes évitent une colonne
+   unique interminable. En dessous de 640 px, une seule colonne comme avant. */
 @media (max-width: 980px) {
   .reviews__grid {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .reviews__grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 

@@ -400,7 +400,7 @@
   "gallery": {
     "eyebrow": "— L'instant Tramonto",
     "title": "Pizzas, salle, façade : un coup d'œil chez nous.",
-    "intro": "Quelques images du four, du comptoir et de la rue Nationale au coucher du soleil.",
+    "intro": "Quelques images de la salle, des assiettes et de la rue Nationale au coucher du soleil.",
     "ariaLabel": "Galerie photo Tramonto",
     "agrandir": "Agrandir la photo",
     "fermer": "Fermer la galerie",
@@ -444,6 +444,15 @@
         "format": "wide"
       },
       {
+        "src": "/photos/salle-mur-vegetal.jpg",
+        "webp": "/photos/salle-mur-vegetal.webp",
+        "alt": "Salle de Tramonto : tables en bois, banquettes vertes, mur végétal et lanternes",
+        "legende": "Notre salle",
+        "largeur": 1016,
+        "hauteur": 762,
+        "format": "xl"
+      },
+      {
         "src": "/photos/pizza-thon-de-passion.jpg",
         "webp": "/photos/pizza-thon-de-passion.webp",
         "alt": "Pizza Thon de Passion : thon, olives, tomates, poivrons jaunes",
@@ -464,8 +473,8 @@
       {
         "src": "/photos/salle-banquette.jpg",
         "webp": "/photos/salle-banquette.webp",
-        "alt": "Plat servi en salle sur la banquette verte de la pizzeria",
-        "legende": "En salle",
+        "alt": "Grillade servie sur planche en bois avec potatoes, roquette et tomates cerises, sur la banquette verte de la salle",
+        "legende": "Grillade sur planche",
         "largeur": 600,
         "hauteur": 800,
         "format": "normal"
@@ -484,32 +493,53 @@
   "reviews": {
     "eyebrow": "— Vos avis",
     "title": "Ce que disent nos clients sur Google",
-    "noteAria": "Note moyenne 4,6 sur 5 sur Google",
+    "noteAria": "Note moyenne 4,7 sur 5 sur Google, sur 121 avis",
     "etoiles": "★★★★★",
-    "note": "4,6 / 5",
-    "sousTitre": "avis Google · Tramonto Cholet",
+    "note": "4,7 / 5",
+    "sousTitre": "121 avis Google · Tramonto Cholet",
     "cta": {
       "label": "Lire tous les avis sur Google"
     },
     "items": [
       {
-        "name": "Kate R.",
-        "texte": "Je ne connaissais pas cette pizzeria à aujourd'hui. Je viens de prendre une pizza chèvre miel à emporter que je trouve vraiment très bonne. Je reviendrai une prochaine fois.",
-        "source": "Avis Google",
+        "name": "Sarah Dokhan",
+        "texte": "C'est vraiment la meilleure pizza que je n'ai jamais mangée. La pâte est plus qu'incroyable ce qui fait que j'ai mangé les bords jusqu'au bout, ce qui est rare ;) Merci et bravo !",
+        "source": "Avis Google · août 2026",
         "etoiles": "★★★★★",
         "etoilesAria": "5 sur 5"
       },
       {
-        "name": "Cynthia FR",
-        "texte": "Première dans ce restaurant après une soirée cinéma. Serveur au top et les pizza une tuerie, la pâte est juste succulente, très rare d'en trouver des comme ça, la garniture est fraîche et très bonne. Le service est impeccable et le lieu est très propre. Je recommande.",
-        "source": "Avis Google",
+        "name": "Aurélien G.",
+        "texte": "Petit restaurant qui ne paie pas de mine, mais goût incroyable. J'ai adoré mes tagliatelles saumon et ma compagne a aussi été estomaquée (en bien) par la qualité des pâtes pesto.",
+        "source": "Avis Google · août 2026",
         "etoiles": "★★★★★",
         "etoilesAria": "5 sur 5"
       },
       {
-        "name": "Vincent Boileau",
-        "texte": "Les plats sont une découverte, avec des goûts surprenants ! La pizza c'est une régale ! Une équipe très souriante, qui effectue un très bon travail. Très très bon restaurant.",
-        "source": "Avis Google",
+        "name": "Denis Jean-Charles",
+        "texte": "En vacances à Cholet, nous avons été manger à ce restaurant en nous fiant aux critiques Google. Très bonne surprise, les pâtes et la pizza étaient délicieuses !!",
+        "source": "Avis Google · août 2026",
+        "etoiles": "★★★★★",
+        "etoilesAria": "5 sur 5"
+      },
+      {
+        "name": "Morgane Vvs",
+        "texte": "Accueil chaleureux, service rapide, les pâtes au saumon étaient vraiment très bonnes, très bon rapport qualité prix, la quantité était vraiment parfaite ! Petit pain pizza offert en accompagnement ! Je recommande.",
+        "source": "Avis Google · août 2026",
+        "etoiles": "★★★★★",
+        "etoilesAria": "5 sur 5"
+      },
+      {
+        "name": "Vaishali Gupta",
+        "texte": "Ce fut une excellente découverte. Nous y sommes allés dîner après une longue journée, en nous fiant aux avis, et la cuisine était vraiment spectaculaire. Le service était rapide et généreux. […] Leurs pâtes et leur focaccia sont incontournables.",
+        "source": "Avis Google · août 2026",
+        "etoiles": "★★★★★",
+        "etoilesAria": "5 sur 5"
+      },
+      {
+        "name": "Célia Roux",
+        "texte": "De passage à Cholet, nous avons commandé des pâtes au saumon et des pizzas, tout était excellent ! La portion de pâtes était succulente et très copieuse. La pâte à pizza est excellente, nous nous sommes tous régalés. Accueil très sympathique, de plus, merci pour la bouteille offerte, nous recommandons vivement ! :)",
+        "source": "Avis Google · juillet 2026",
         "etoiles": "★★★★★",
         "etoilesAria": "5 sur 5"
       }
